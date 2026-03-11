@@ -21,55 +21,43 @@ export const Home = () => {
             muted
             className="w-full h-full object-cover opacity-100 top-0"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-aurea-dark via-aurea-dark/60 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-aurea-dark/90 md:from-aurea-dark/80 via-aurea-dark/40 md:via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-aurea-dark/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-aurea-dark via-aurea-dark/40 to-transparent"></div>
         </div>
 
         <BackgroundGrid />
 
-        <div className="relative z-10 w-full px-6 md:px-12 max-w-[1600px] mx-auto flex flex-col h-full justify-between md:justify-end">
+        <div className="relative z-10 w-full px-6 md:px-12 max-w-[1600px] mx-auto flex flex-col items-center justify-center h-full text-center py-20 mt-12 md:mt-24">
 
-          {/* Top Content (Mobile) / Left Content (Desktop) */}
-          <div className="mt-12 md:mt-0 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end relative mb-auto md:mb-0 z-20">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="lg:col-span-6 lg:mb-24"
-            >
-              <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-aurea-gold mb-6 md:mb-8 leading-tight uppercase tracking-tighter">
-                Onde arquitetura e valor caminham juntos.
-              </h2>
-              <p className="font-sans text-aurea-light/80 text-sm md:text-base leading-relaxed mb-8 md:mb-10 text-balance uppercase tracking-wider max-w-2xl">
-                A curadoria definitiva para investidores que não buscam apenas metro quadrado, mas ativos de alta liquidez e segurança patrimonial. A conexão direta e exclusiva entre o Mato Grosso do Sul e o litoral de Santa Catarina.
-              </p>
-              <Link to="/portfolio" className="inline-flex items-center justify-center rounded-full border border-aurea-gold text-aurea-gold px-8 py-4 md:px-10 md:py-5 font-sans font-medium uppercase tracking-[0.2em] text-[10px] md:text-xs hover:bg-aurea-gold hover:text-aurea-dark transition-all duration-500">
-                Explorar Portfólio Premium
-                <div className="w-12 h-12 rounded-full border border-aurea-gold/30 ml-2 flex items-center justify-center backdrop-blur-md">
-                  <ArrowRight size={16} className="text-aurea-gold transform -rotate-45" />
-                </div>
-              </Link>
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col items-center z-20 w-full"
+          >
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-aurea-gold mb-6 md:mb-8 leading-tight uppercase tracking-tighter max-w-4xl mx-auto">
+              Onde arquitetura e valor caminham juntos.
+            </h2>
+            <p className="font-sans text-aurea-light/80 text-sm md:text-base leading-relaxed mb-8 md:mb-10 text-balance uppercase tracking-wider max-w-2xl mx-auto">
+              A curadoria definitiva para investidores que não buscam apenas metro quadrado, mas ativos de alta liquidez e segurança patrimonial. A conexão direta e exclusiva entre o Mato Grosso do Sul e o litoral de Santa Catarina.
+            </p>
+            <Link to="/portfolio" className="inline-flex items-center justify-center rounded-full border border-aurea-gold text-aurea-gold px-8 py-4 md:px-10 md:py-5 font-sans font-medium uppercase tracking-[0.2em] text-[10px] md:text-xs hover:bg-aurea-gold hover:text-aurea-dark transition-all duration-500 mb-12 lg:mb-16 group">
+              Explorar Portfólio Premium
+              <div className="w-12 h-12 rounded-full border border-aurea-gold/30 ml-2 flex items-center justify-center backdrop-blur-md">
+                <ArrowRight size={16} className="text-aurea-gold transform -rotate-45 group-hover:text-aurea-dark transition-colors" />
+              </div>
+            </Link>
+          </motion.div>
 
-          {/* Massive Text & Floating Card */}
-          <div className="relative w-full mt-12 md:mt-0 flex flex-col justify-end">
-            {/* Tata Image */}
-            <motion.img
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              src={imgtata}
-              alt=""
-              className="absolute z-10 bottom-[30%] md:bottom-0 right-[-30px] md:right-[10%] w-[450px] md:w-[700px] max-w-none pointer-events-none translate-y-[30%] md:translate-y-0"
-            />
+          <div className="relative w-full flex flex-col items-center justify-center gap-12 lg:gap-16">
+            {/* Massive Text */}
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4 }}
-              className="relative z-0 font-serif text-[25vw] md:text-[22vw] leading-[0.75] tracking-tighter text-aurea-light select-none -ml-1 md:-ml-4 mb-8 md:mb-0"
+              className="relative z-0 font-serif w-full max-w-[1000px] select-none flex justify-center items-center"
             >
-              <img src={aureaGradient} alt="" className="relative z-0" />
+              <img src={aureaGradient} alt="Aurea" className="w-full relative z-0" />
             </motion.h1>
 
             {/* Floating Card */}
@@ -77,7 +65,7 @@ export const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
-              className="relative z-20 w-full md:absolute md:bottom-12 md:right-8 bg-aurea-surface border border-white/5 p-6 md:p-8 md:w-[420px] shadow-2xl flex flex-col gap-6 backdrop-blur-sm"
+              className="relative z-20 w-full bg-aurea-surface border border-white/5 p-6 md:p-8 md:w-[420px] shadow-2xl flex flex-col gap-6 backdrop-blur-sm text-left mx-auto"
             >
               <div className="flex items-center gap-5">
                 <img
@@ -97,12 +85,57 @@ export const Home = () => {
               <Link to="/contato" className="flex items-center justify-between group border-t border-white/10 pt-5">
                 <span className="font-sans text-[10px] md:text-xs uppercase tracking-widest text-aurea-light/70 group-hover:text-aurea-gold transition-colors">Agendar consultoria</span>
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-white/5 border border-white/10 text-aurea-gold flex items-center justify-center group-hover:bg-aurea-gold group-hover:text-aurea-dark transition-all duration-300">
-
-                  <ArrowRight size={16} className="text-aurea-gold transform -rotate-45" />
-
+                  <ArrowRight size={16} className="text-aurea-gold transform -rotate-45 group-hover:text-aurea-dark transition-colors" />
                 </div>
               </Link>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Expert: Tatá Marques */}
+      <section className="py-32 px-6 md:px-12 max-w-[1600px] mx-auto relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+          {/* Image Side */}
+          <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] w-full max-w-md lg:max-w-xl mx-auto overflow-hidden bg-aurea-surface border border-white/5 group">
+            <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10 duration-700"></div>
+            <img
+              src={imgtata}
+              alt="Tatá Marques"
+              className="w-full h-full object-cover object-top grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+            />
+            {/* Decorative element */}
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 border-l border-b border-aurea-gold/30 z-0 hidden lg:block"></div>
+            <div className="absolute top-8 right-8 z-20">
+              <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-aurea-gold bg-aurea-dark/90 px-4 py-1.5 backdrop-blur-md border border-aurea-gold/30">Diretoria</span>
+            </div>
+          </div>
+
+          {/* Text Side */}
+          <div className="flex flex-col justify-center">
+            <div className="mb-8 flex items-center gap-4">
+              <span className="w-12 h-[1px] bg-aurea-gold/50"></span>
+              <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-aurea-gold">Assessoria VIP</span>
+            </div>
+            <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl uppercase tracking-tighter mb-8 text-aurea-light leading-[0.9]">
+              Tatá Marques
+            </h2>
+            <div className="w-24 h-[1px] bg-aurea-gold/30 mb-8"></div>
+            <p className="font-sans text-base md:text-lg text-aurea-light/90 mb-8 uppercase tracking-widest leading-relaxed">
+              A <span className="text-aurea-gold font-medium">inteligência por trás</span> das melhores alocações no mercado mais promissor do país.
+            </p>
+            <p className="font-sans text-[11px] md:text-xs text-aurea-light/60 mb-12 uppercase tracking-widest leading-relaxed text-balance">
+              Com networking exclusivo e profundo domínio do ciclo imobiliário catarinense, mapeia as oportunidades de maior liquidez e segurança patrimonial antes mesmo de chegarem ao mercado. A conexão direta e de confiança para investidores institucionais e private.
+            </p>
+
+            <Link to="/contato" className="inline-flex items-center gap-6 group w-fit">
+              <span className="font-sans text-[10px] md:text-xs uppercase tracking-[0.2em] text-aurea-light group-hover:text-aurea-gold transition-colors">
+                Agendar Reunião de Diretoria
+              </span>
+              <div className="w-12 h-12 rounded-full border border-aurea-gold/30 flex items-center justify-center group-hover:bg-aurea-gold transition-all duration-500 bg-white/5">
+                <ArrowRight size={16} className="text-aurea-gold group-hover:text-aurea-dark transform -rotate-45 transition-colors" />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
