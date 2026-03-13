@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { BackgroundGrid } from '../components/SVGElements';
+import tatamarques from '../assets/img/tata.png';
 
 export const About = () => {
   return (
     <div className="w-full pt-32 pb-20">
       <BackgroundGrid />
-      
+
       {/* Hero Section */}
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -29,35 +30,18 @@ export const About = () => {
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 relative z-10">
         <div className="bg-aurea-surface rounded-[3rem] p-8 md:p-16 relative overflow-hidden border border-white/5">
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-aurea-dark/50 to-transparent pointer-events-none"></div>
-          
+
           <div className="text-center mb-16 relative z-10">
             <h2 className="font-serif text-4xl md:text-5xl text-aurea-gold">A Diretoria</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24 relative z-10">
-            {/* Guilherme Pilger */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <div className="w-full aspect-[3/4] rounded-[2rem] overflow-hidden mb-8 border border-white/10">
-                <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" 
-                  alt="Guilherme Pilger" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <h3 className="font-serif text-3xl mb-2">Guilherme Pilger</h3>
-              <p className="font-sans text-sm tracking-widest uppercase text-aurea-gold mb-6">O Rei da Brava</p>
-              <p className="font-sans text-aurea-light/70 leading-relaxed text-sm">
-                Com atuação de destaque no mercado de imóveis de alto padrão em Santa Catarina, Guilherme construiu sua trajetória com um olhar aguçado para a arquitetura e habilidade em perceber o potencial de valorização de cada ativo. Ele conduz o investidor de forma analítica, provando que escolher a cidade certa é tão importante quanto o ativo exato.
-              </p>
-            </div>
-
+          <div className="flex flex-col items-center max-w-xl mx-auto relative z-10">
             {/* Tatá Marques */}
-            <div className="flex flex-col items-center md:items-start text-center md:text-left md:mt-24">
+            <div className="flex flex-col items-center text-center">
               <div className="w-full aspect-[3/4] rounded-[2rem] overflow-hidden mb-8 border border-white/10">
-                <img 
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" 
-                  alt="Tatá Marques" 
+                <img
+                  src={tatamarques}
+                  alt="Tatá Marques"
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />

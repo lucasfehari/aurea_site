@@ -18,7 +18,7 @@ export const Layout = () => {
     { name: 'Home', path: '/' },
     { name: 'Sobre a Áurea', path: '/sobre' },
     { name: 'Curadoria de Ativos', path: '/portfolio' },
-    { name: 'Revista & Mídia', path: '/revista' },
+    { name: 'Revista Áurea', path: '/revista' },
     { name: 'Contato', path: '/contato' },
   ];
 
@@ -91,10 +91,6 @@ export const Layout = () => {
           <div>
             <h3 className="font-serif text-xl mb-6">Diretoria</h3>
             <ul className="space-y-4 font-sans text-sm text-aurea-light/80">
-              <li>
-                <strong className="block text-aurea-light">Guilherme Pilger</strong>
-                Corretor de Imóveis Especialista
-              </li>
               <li>
                 <strong className="block text-aurea-light">Tatá Marques</strong>
                 Comercial<br />

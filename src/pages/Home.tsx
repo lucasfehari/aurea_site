@@ -4,15 +4,20 @@ import { BackgroundGrid } from '../components/SVGElements';
 import { ArrowRight, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import aureaGradient from '../assets/SVG/aurea-gradient.svg';
-import imgtata from '../assets/img/tata.png';
+import imgTataNovo from '../assets/img/LLB_6971.jpg';
 import videobg from '../assets/videos/bg_hero.mp4';
-
+import videoTata from '../assets/videos/TATÁ MARQUES CORRETOR TERRENO 60M 1080p v3.mp4';
+import imgHome1 from '../assets/imoveis_alphaville_damha/Alto Padrao Neoclassico no Alphaville III - Cod 724.jpeg';
+import imgHome2 from '../assets/imoveis_alphaville_damha/Sonho e Realidade - Cod 167.jpeg';
+import imgHome3 from '../assets/imoveis_alphaville_damha/Alto padrao no Damha I - Cod 184.jpeg';
+import imgHome4 from '../assets/imoveis_alphaville_damha/Residencial Alphaville 2 - Cod 555.jpeg';
+import imgHome5 from '../assets/imoveis_alphaville_damha/Alphaville III - Exclusiva Casa Terrea de Esquina - Cod 746.jpeg';
 
 export const Home = () => {
   return (
     <div className="w-full bg-aurea-dark text-aurea-light min-h-scree ">
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[700px] w-full flex flex-col justify-end overflow-hidden pb-8 md:pb-12 pt-24">
+      <section className="relative min-h-screen h-auto w-full flex flex-col justify-end overflow-hidden pb-8 md:pb-12 pt-40 md:pt-48">
         <div className="absolute inset-0 z-0">
           <video
             src={videobg}
@@ -27,7 +32,7 @@ export const Home = () => {
 
         <BackgroundGrid />
 
-        <div className="relative z-10 w-full px-6 md:px-12 max-w-[1600px] mx-auto flex flex-col items-center justify-center h-full text-center py-20 mt-12 md:mt-24">
+        <div className="relative z-10 w-full px-6 md:px-12 max-w-[1600px] mx-auto flex flex-col items-center justify-center flex-grow text-center py-12 mt-8 lg:mt-16">
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -97,12 +102,12 @@ export const Home = () => {
       <section className="py-32 px-6 md:px-12 max-w-[1600px] mx-auto relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Image Side */}
-          <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] w-full max-w-md lg:max-w-xl mx-auto overflow-hidden bg-aurea-surface border border-white/5 group">
+          <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] w-full max-w-md lg:max-w-xl mx-auto overflow-hidden bg-aurea-surface border border-white/5 group rounded-[1rem] shadow-2xl">
             <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10 duration-700"></div>
             <img
-              src={imgtata}
+              src={imgTataNovo}
               alt="Tatá Marques"
-              className="w-full h-full object-cover object-top grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
+              className="w-full h-full object-cover object-top filter contrast-[1.1] opacity-90 group-hover:scale-105 transition-all duration-1000"
             />
             {/* Decorative element */}
             <div className="absolute -bottom-6 -left-6 w-32 h-32 border-l border-b border-aurea-gold/30 z-0 hidden lg:block"></div>
@@ -177,7 +182,7 @@ export const Home = () => {
           <div className="lg:col-span-5 relative">
             <div className="w-full aspect-[4/5] bg-aurea-surface overflow-hidden border border-white/5 relative z-10">
               <img
-                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1950&auto=format&fit=crop"
+                src={imgHome1}
                 alt="Modern Architecture"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 opacity-80"
                 referrerPolicy="no-referrer"
@@ -265,7 +270,7 @@ export const Home = () => {
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10"></div>
               <img
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1935&auto=format&fit=crop"
+                src={imgHome2}
                 alt="Yachthouse"
                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
@@ -278,7 +283,7 @@ export const Home = () => {
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10"></div>
               <img
-                src="https://images.unsplash.com/photo-1613490908574-1706b2165089?q=80&w=2070&auto=format&fit=crop"
+                src={imgHome3}
                 alt="Ená Praia do Estaleiro"
                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
@@ -315,7 +320,7 @@ export const Home = () => {
             </div>
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <img
-                src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=2070&auto=format&fit=crop"
+                src={imgHome4}
                 alt="Brava Home Resort"
                 className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
@@ -328,7 +333,7 @@ export const Home = () => {
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10"></div>
               <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+                src={imgHome5}
                 alt="One Tower"
                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
@@ -353,14 +358,17 @@ export const Home = () => {
       {/* Section 5: Best Offers Layout */}
       <section className="py-32 px-6 md:px-12 max-w-[1600px] mx-auto border-t border-white/5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-white/5">
-          <div className="relative aspect-square lg:aspect-auto bg-aurea-surface overflow-hidden">
-            <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-              alt="Luxury Interior"
-              className="w-full h-full object-cover grayscale opacity-60 hover:scale-105 hover:grayscale-0 transition-all duration-1000"
-              referrerPolicy="no-referrer"
+          <div className="relative aspect-auto bg-aurea-surface overflow-hidden flex items-center justify-center min-h-[500px]">
+            <video
+              src={videoTata}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 hover:scale-105 hover:grayscale-0 transition-all duration-1000"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-aurea-dark/80 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-aurea-dark/80 via-transparent to-transparent pointer-events-none"></div>
             <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 flex items-center gap-4">
               <div className="w-12 h-12 rounded-full border border-aurea-gold/30 flex items-center justify-center backdrop-blur-md">
                 <ArrowRight size={16} className="text-aurea-gold transform -rotate-45" />

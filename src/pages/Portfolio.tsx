@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { BackgroundGrid } from '../components/SVGElements';
-import { ChevronRight, CheckCircle2 } from 'lucide-react';
+import { ChevronRight, CheckCircle2, PlayCircle } from 'lucide-react';
+import { propertiesData } from '../data/properties';
 
 export const Portfolio = () => {
   return (
@@ -30,126 +31,42 @@ export const Portfolio = () => {
 
       {/* Categoria: Highlight / Joia da Coroa */}
       <section className="px-6 md:px-12 max-w-[1600px] mx-auto mb-32 relative z-10">
-        <PropertyCard
-          title="Brava Home Resort"
-          location="Praia Brava | Itajaí"
-          tag="A Joia da Coroa"
-          image="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=2070&auto=format&fit=crop"
-          summary="Cobertura duplex no Brava Home Resort, o ápice do conceito 'resort residencial'. Produto raro, pronto para morar, com piscina privativa e vista permanente para o mar em um dos condomínios mais completos da região com mais de 60 mil m² de lazer."
-          specs={[
-            "Cobertura Duplex",
-            "360 m² Privativos",
-            "4 Suítes | 4 Vagas",
-            "Pronto para morar"
-          ]}
-          audience="Empresários e investidores patrimoniais que valorizam infraestrutura completa de resort aliada à exclusividade e segurança."
-          price="R$ 17.900.000,00"
-          cta="Solicitar Dossiê Confidencial"
-          highlight
-        />
+        <PropertyCard {...propertiesData.highlight} />
       </section>
 
       {/* Categoria: Símbolos de Status & Arquitetura */}
       <CategorySection title="Ícones do Litoral Catarinense">
-        <PropertyCard
-          title="Yachthouse by Pininfarina"
-          location="Balneário Camboriú | Barra Sul"
-          image="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1935&auto=format&fit=crop"
-          summary="Um marco da engenharia e arquitetura de luxo no Brasil com assinatura Pininfarina. Com 294 metros de altura, é um dos edifícios residenciais mais altos da América Latina oferecendo vista panorâmica definitiva para o mar e marina."
-          specs={[
-            "4 Suítes | 4 Vagas",
-            "Frente Mar | Barra Sul",
-            "Hall privativo",
-            "Assinatura Pininfarina"
-          ]}
-          audience="Investidores de alto patrimônio, empresários e executivos que buscam exclusividade, status patrimonial e localização premium."
-          price="Valor sob consulta"
-          cta="Agendar Visita"
-        />
-        <PropertyCard
-          title="One Tower"
-          location="Balneário Camboriú | Barra Sul"
-          image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
-          summary="Um dos empreendimentos mais emblemáticos de BC com 290 metros de altura. Lajes amplas, dois apartamentos por andar e propostas de viver com conforto e sofisticação inigualáveis no mercado premium catarinense."
-          specs={[
-            "4 Suítes | 3 Vagas",
-            "Frente Mar | Living Integrado",
-            "Apenas 2 unidades por andar",
-            "Concluído (Pronto)"
-          ]}
-          audience="Clientes exigentes por experiência de vida premium e compradores estratégicos com foco em patrimônio imobiliário de altíssimo nível."
-          price="Valor sob consulta"
-          cta="Agendar Visita"
-        />
+        {propertiesData.icons.map((prop, idx) => (
+          <PropertyCard key={idx} {...prop} />
+        ))}
       </CategorySection>
 
       {/* Categoria: Ultra Exclusividade & Natureza */}
       <CategorySection title="Ultra Exclusividade & Conservação">
-        <PropertyCard
-          title="Ená – Praia do Estaleiro"
-          location="Balneário Camboriú | Praia do Estaleiro"
-          image="https://images.unsplash.com/photo-1613490908574-1706b2165089?q=80&w=2070&auto=format&fit=crop"
-          summary="Raro privilégio de ser pé na areia na preservada Praia do Estaleiro. Um projeto de 'mansões suspensas' exclusivas, com vista mar permanente, ampla customização e total integração com a natureza."
-          specs={[
-            "356 m² Privativos",
-            "4 Suítes | 4 Vagas",
-            "Pé na areia absoluto",
-            "Entrega: Julho/2027"
-          ]}
-          audience="Investidores de alto patrimônio que priorizam privacidade, exclusividade absoluta e localização natural diferenciada."
-          price="R$ 21.774.400,00"
-          cta="Receber Dossiê"
-        />
-        <PropertyCard
-          title="Porto Belo Golf Resort"
-          location="Porto Belo | SC"
-          image="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=2070&auto=format&fit=crop"
-          summary="Terreno exclusivo no primeiro condomínio com campo de golfe iluminado do Brasil. A união perfeita entre segurança, alto padrão, contato com a natureza e forte valorização patrimonial."
-          specs={[
-            "Terreno em Condomínio",
-            "543 m² privativos",
-            "Campo de Golfe Iluminado",
-            "Segurança 24h e Resort Lifestyle"
-          ]}
-          audience="Famílias e investidores que buscam segurança, planejamento urbano e a criação de um lar totalmente personalizado em um ambiente seleto."
-          price="R$ 3.800.000,00"
-          cta="Explorar Terreno"
-        />
+        {propertiesData.exclusive.map((prop, idx) => (
+          <PropertyCard key={idx} {...prop} />
+        ))}
       </CategorySection>
 
       {/* Categoria: Alta Liquidez & Lançamentos Estratégicos */}
       <CategorySection title="Alta Liquidez & Novos Ciclos">
-        <PropertyCard
-          title="Atlantic Paradise"
-          location="Itapema | Meia Praia"
-          image="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop"
-          summary="Apartamento de altíssimo padrão frente mar em uma região de altíssima liquidez. Ambientes totalmente mobiliados, climatizados e ampla varanda gourmet com vista panorâmica."
-          specs={[
-            "281 m² Privativos",
-            "4 Suítes | 3 Vagas",
-            "Frente Mar (Pronto)",
-            "Totalmente Mobiliado"
-          ]}
-          audience="Investidores patrimoniais que buscam ativo sólido frente mar, pronto para uso e com grande potencial de valorização e locação premium."
-          price="R$ 13.420.000,00"
-          paymentCondition="40% de entrada + saldo em 48x"
-          cta="Saber Mais"
-        />
-        <PropertyCard
-          title="Namar Phacz Home"
-          location="Porto Belo | Perequê"
-          image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-          summary="Lançamento com arquitetura contemporânea em um dos bairros com maior crescimento e valorização do litoral. Ambientes amplos perfeitamente integrados ao entorno natural."
-          specs={[
-            "2 a 4 Suítes",
-            "Lançamento Alto Padrão",
-            "Arquitetura Contemporânea",
-            "Plantas Amplas Integradas"
-          ]}
-          audience="Investidores estratégicos visando ganho de capital até a entrega e diversificação de portfólio no novo eixo de expansão imobiliária."
-          price="Valor sob consulta"
-          cta="Acessar Tabela (Venda Exclusiva)"
-        />
+        {propertiesData.liquidity.map((prop, idx) => (
+          <PropertyCard key={idx} {...prop} />
+        ))}
+      </CategorySection>
+
+      {/* Categoria: MS - Damha e Alphaville */}
+      <CategorySection title="Seleção MS - Alphaville & Damha">
+        {propertiesData.ms_properties.map((prop, idx) => (
+          <PropertyCard key={idx} {...prop} />
+        ))}
+      </CategorySection>
+
+      {/* Categoria: Vídeos */}
+      <CategorySection title="Apresentações em Vídeo">
+        {propertiesData.videos.map((video, idx) => (
+          <VideoCard key={idx} {...video} />
+        ))}
       </CategorySection>
     </div>
   );
@@ -168,7 +85,7 @@ const CategorySection = ({ title, children }: { title: string, children: React.R
 );
 
 const PropertyCard = ({
-  title, location, image, summary, specs, audience, price, paymentCondition, cta, highlight, tag
+  title, location, image, summary, specs, audience, price, paymentCondition, cta, highlight, tag, videoUrl
 }: any) => (
   <div className={`group flex flex-col ${highlight ? 'lg:col-span-2 lg:flex-row bg-aurea-surface border border-white/5' : 'bg-aurea-surface h-full border border-white/5 flex flex-col'} relative overflow-hidden transition-all duration-500 hover:border-aurea-gold/30 hover:shadow-[0_0_40px_rgba(202,176,131,0.05)]`}>
 
@@ -230,12 +147,41 @@ const PropertyCard = ({
         )}
       </div>
 
-      <div className="mt-auto shrink-0">
+      <div className="mt-auto shrink-0 flex flex-col gap-3">
+        {videoUrl && (
+          <a href={videoUrl} target="_blank" rel="noreferrer" className="w-full inline-flex items-center justify-center gap-3 bg-transparent border border-white/10 text-aurea-light px-6 py-4 font-sans uppercase tracking-[0.2em] text-[10px] hover:bg-white/5 hover:border-aurea-gold/30 transition-all duration-500">
+            <PlayCircle size={14} className="text-aurea-gold" />
+            <span>Ver Vídeo do Imóvel</span>
+          </a>
+        )}
         <button className="group/btn w-full inline-flex items-center justify-between bg-white/5 border border-white/10 text-aurea-light px-6 py-5 font-sans uppercase tracking-[0.2em] text-[10px] hover:bg-aurea-gold hover:text-aurea-dark hover:border-aurea-gold transition-all duration-500">
           <span>{cta}</span>
           <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
         </button>
       </div>
+    </div>
+  </div>
+);
+
+const VideoCard = ({ title, location, thumbnail, videoUrl }: any) => (
+  <div className="group flex flex-col bg-aurea-surface border border-white/5 hover:border-aurea-gold/30 transition-all duration-500 overflow-hidden">
+    <div className="aspect-video w-full overflow-hidden relative">
+      <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all duration-700 z-10 pointer-events-none"></div>
+      {/* Fallback frame while video is not actually loaded / playing if thumbnail is used, but for now we just show a standard video element */}
+      <video
+        src={videoUrl}
+        poster={thumbnail}
+        controls
+        className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 z-20"
+      />
+    </div>
+    <div className="p-8">
+      <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-aurea-gold/80 flex items-center gap-2 mb-4">
+        {location}
+      </span>
+      <h3 className="font-serif text-2xl uppercase tracking-tighter text-aurea-light">
+        {title}
+      </h3>
     </div>
   </div>
 );
