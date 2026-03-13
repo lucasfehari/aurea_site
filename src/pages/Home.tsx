@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import aureaGradient from '../assets/SVG/aurea-gradient.svg';
 import imgTataNovo from '../assets/img/LLB_6971.jpg';
 import videobg from '../assets/videos/bg_hero.mp4';
-import videoTata from '../assets/videos/TATÁ MARQUES CORRETOR TERRENO 60M 1080p v3.mp4';
 import imgHome1 from '../assets/imoveis_alphaville_damha/Alto Padrao Neoclassico no Alphaville III - Cod 724.jpeg';
 import imgHome2 from '../assets/imoveis_alphaville_damha/Sonho e Realidade - Cod 167.jpeg';
 import imgHome3 from '../assets/imoveis_alphaville_damha/Alto padrao no Damha I - Cod 184.jpeg';
@@ -358,17 +357,20 @@ export const Home = () => {
       {/* Section 5: Best Offers Layout */}
       <section className="py-32 px-6 md:px-12 max-w-[1600px] mx-auto border-t border-white/5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-white/5">
-          <div className="relative aspect-auto bg-aurea-surface overflow-hidden flex items-center justify-center min-h-[500px]">
-            <video
-              src={videoTata}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              className="absolute inset-0 w-full h-full object-cover grayscale opacity-60 hover:scale-105 hover:grayscale-0 transition-all duration-1000"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-aurea-dark/80 via-transparent to-transparent pointer-events-none"></div>
+          <div className="relative bg-aurea-dark overflow-hidden flex items-center justify-center min-h-[500px]">
+            <div className="w-full h-full absolute inset-0">
+               <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                 <iframe 
+                   src="https://player.vimeo.com/video/1173358742?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;background=1&amp;autoplay=1&amp;loop=1&amp;byline=0&amp;title=0" 
+                   frameBorder="0" 
+                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                   style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                   title="TATÁ MARQUES CORRETOR TERRENO"
+                 ></iframe>
+               </div>
+               <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div className="absolute inset-0 bg-aurea-dark/20 pointer-events-none"></div>
             <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 flex items-center gap-4">
               <div className="w-12 h-12 rounded-full border border-aurea-gold/30 flex items-center justify-center backdrop-blur-md">
                 <ArrowRight size={16} className="text-aurea-gold transform -rotate-45" />
