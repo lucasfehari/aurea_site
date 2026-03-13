@@ -4,6 +4,9 @@ import { BackgroundGrid } from '../components/SVGElements';
 import { ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import imgRevista from '../assets/img/LLB_6971.jpg';
+import imgNews1 from '../assets/img/news_coastline_1773424069387.png';
+import imgNews2 from '../assets/img/news_architecture_1773424086740.png';
+import imgNews3 from '../assets/img/news_regions_1773424103735.png';
 
 export const Magazine = () => {
   return (
@@ -65,17 +68,17 @@ export const Magazine = () => {
             {
               title: "A contínua valorização do litoral catarinense",
               desc: "Os fatores consolidados que impulsionam a demanda por imóveis de luxo e a segurança do investimento a longo prazo.",
-              img: "/src/assets/img/news_coastline_1773424069387.png"
+              img: imgNews1
             },
             {
               title: "Tendências em Arquitetura de Alto Padrão",
               desc: "Como o design moderno e a integração com a natureza estão redefinindo os lançamentos mais cobiçados da região.",
-              img: "/src/assets/img/news_architecture_1773424086740.png"
+              img: imgNews2
             },
             {
               title: "A Ascensão de Novas Regiões e Oportunidades",
               desc: "Além de Balneário Camboriú, praias vizinhas começam a despontar como as novas apostas do mercado imobiliário premium.",
-              img: "/src/assets/img/news_regions_1773424103735.png"
+              img: imgNews3
             }
           ].map((item, idx) => (
             <div key={idx} className="bg-aurea-surface border border-white/5 rounded-[2rem] overflow-hidden group hover:border-aurea-gold/30 transition-colors">

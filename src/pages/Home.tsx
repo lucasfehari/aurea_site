@@ -17,12 +17,14 @@ export const Home = () => {
     <div className="w-full bg-aurea-dark text-aurea-light min-h-scree ">
       {/* Hero Section */}
       <section className="relative min-h-screen h-auto w-full flex flex-col justify-end overflow-hidden pb-8 md:pb-12 pt-40 md:pt-48">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 pointer-events-none">
           <video
             src={videobg}
             autoPlay
             loop
             muted
+            playsInline
+            preload="auto"
             className="w-full h-full object-cover opacity-100 top-0"
           />
           <div className="absolute inset-0 bg-aurea-dark/60"></div>
