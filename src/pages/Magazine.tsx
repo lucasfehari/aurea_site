@@ -29,7 +29,7 @@ export const Magazine = () => {
               <Link to="/contato" className="inline-flex items-center justify-center gap-3 bg-aurea-gold text-aurea-dark px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-aurea-light transition-colors">
                 Entre em Contato <ArrowRight size={16} />
               </Link>
-              <a href="https://drive.google.com/file/d/1eJIFG5o-ZBkn61c9JivybR3LUKYAnrVr/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-aurea-light px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">
+              <a href="https://drive.google.com/file/d/1UfR3jHhVZt_UoOC_ALahOFIJbwO-wjGS/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-aurea-light px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">
                 <BookOpen size={16} />
                 Clique aqui para baixar
               </a>
@@ -65,17 +65,17 @@ export const Magazine = () => {
             {
               title: "A contínua valorização do litoral catarinense",
               desc: "Os fatores consolidados que impulsionam a demanda por imóveis de luxo e a segurança do investimento a longo prazo.",
-              img: "/src/assets/imoveis_alphaville_damha/Sonho e Realidade - Cod 167.jpeg"
+              img: "/src/assets/img/news_coastline_1773424069387.png"
             },
             {
               title: "Tendências em Arquitetura de Alto Padrão",
               desc: "Como o design moderno e a integração com a natureza estão redefinindo os lançamentos mais cobiçados da região.",
-              img: "/src/assets/imoveis_alphaville_damha/Alto Padrao Neoclassico no Alphaville III - Cod 724.jpeg"
+              img: "/src/assets/img/news_architecture_1773424086740.png"
             },
             {
               title: "A Ascensão de Novas Regiões e Oportunidades",
               desc: "Além de Balneário Camboriú, praias vizinhas começam a despontar como as novas apostas do mercado imobiliário premium.",
-              img: "/src/assets/imoveis_alphaville_damha/Residencial Alphaville 2 - Cod 555.jpeg"
+              img: "/src/assets/img/news_regions_1773424103735.png"
             }
           ].map((item, idx) => (
             <div key={idx} className="bg-aurea-surface border border-white/5 rounded-[2rem] overflow-hidden group hover:border-aurea-gold/30 transition-colors">
