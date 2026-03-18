@@ -1,104 +1,111 @@
-import imgAlpha1 from '../assets/imoveis_alphaville_damha/Residencial Alphaville 2 - Cod 555.jpeg';
-import imgAlpha2 from '../assets/imoveis_alphaville_damha/Clinton-R296 - Cod 608.jpeg';
-import imgAlpha3 from '../assets/imoveis_alphaville_damha/Alphaville I - Sobrado Novo - Cod 692.jpeg';
-import imgAlpha4 from '../assets/imoveis_alphaville_damha/Alto Padrao Neoclassico no Alphaville III - Cod 724.jpeg';
-import imgAlpha5 from '../assets/imoveis_alphaville_damha/Alphaville III - Exclusiva Casa Terrea de Esquina - Cod 746.jpeg';
+import imgBrava from '../assets/imoveis_organizados/itajai/brava_home_resort_piscina_privativa_01_ref_2363.webp';
+import imgYachthouse from '../assets/imoveis_organizados/balneario_camboriu/yachthouse_fachada_01_ref_1989.webp';
+import imgOneTower from '../assets/imoveis_organizados/balneario_camboriu/one_tower_fachada_01_ref_1026.webp';
+import imgEna from '../assets/imoveis_organizados/balneario_camboriu/ena_fachada_01_ref_2251.webp';
+import imgPortoBeloGolf from '../assets/imoveis_organizados/porto_belo/porto_belo_golf_vista_aerea_01_ref_2339.webp';
+import imgAtlantic from '../assets/imoveis_organizados/itapema/atlantic_paradise_interior_01_ref_2283.webp';
+import imgNamar from '../assets/imoveis_organizados/porto_belo/namar_phacz_home_fachada_01.webp';
 
-import imgDamha1 from '../assets/imoveis_alphaville_damha/Sonho e Realidade - Cod 167.jpeg';
-import imgDamha2 from '../assets/imoveis_alphaville_damha/Alto padrao no Damha I - Cod 184.jpeg';
-import imgDamha3 from '../assets/imoveis_alphaville_damha/Alto padrao Damha I - 5 Suites - Cod 200.jpeg';
-import imgDamha4 from '../assets/imoveis_alphaville_damha/Alto Padrao no Damha III - 4 Suites - Cod 214.jpeg';
-import imgDamha5 from '../assets/imoveis_alphaville_damha/Alto Padrao e Conforto Casa Terrea de Esquina - Cod 208.jpeg';
+// Campo Grande - MS
+import imgAlpha555 from '../assets/imoveis_organizados/campo_grande/alphaville_2_fachada_01_cod_555.webp';
+import imgAlpha608 from '../assets/imoveis_organizados/campo_grande/alphaville_fachada_01_cod_608.webp';
+import imgAlpha724 from '../assets/imoveis_organizados/campo_grande/alphaville_3_fachada_01_cod_724.webp';
+import imgAlpha746 from '../assets/imoveis_organizados/campo_grande/alphaville_3_fachada_01_cod_746.webp';
+import imgDamha167 from '../assets/imoveis_organizados/campo_grande/damha_ii_fachada_01_cod_167.webp';
+import imgDamha184 from '../assets/imoveis_organizados/campo_grande/damha_i_interior_01_cod_184.webp';
+import imgDamha200 from '../assets/imoveis_organizados/campo_grande/damha_i_fachada_01_cod_200.webp';
+import imgDamha208 from '../assets/imoveis_organizados/campo_grande/damha_iii_fachada_01_cod_208.webp';
+import imgDamha214 from '../assets/imoveis_organizados/campo_grande/damha_iii_fachada_01_cod_214.webp';
 
 export const propertiesData = {
   highlight: {
     title: "Brava Home Resort",
-    location: "Praia Brava | Itajaí",
+    location: "Praia Brava | Itajaí - SC",
     tag: "A Joia da Coroa",
-    image: imgAlpha1,
-    summary: "Cobertura duplex no Brava Home Resort, o ápice do conceito 'resort residencial'. Produto raro, pronto para morar, com piscina privativa e vista permanente para o mar em um dos condomínios mais completos da região com mais de 60 mil m² de lazer.",
+    image: imgBrava,
+    summary: "Cobertura duplex exclusiva no Brava Home Resort, um dos resorts residenciais mais desejados da Praia Brava. Oferece alto padrão de conforto, sofisticação e uma vista deslumbrante para o mar em um condomínio com mais de 60 mil m² de lazer.",
     specs: [
-      "Cobertura Duplex",
-      "360 m² Privativos",
+      "Cobertura Duplex | 360 m²",
       "4 Suítes | 4 Vagas",
+      "Piscina Privativa",
       "Pronto para morar"
     ],
     audience: "Empresários e investidores patrimoniais que valorizam infraestrutura completa de resort aliada à exclusividade e segurança.",
     price: "R$ 17.900.000,00",
-    cta: "Solicitar Dossiê Confidencial",
+    cta: "Fale com a gente",
     videoUrl: "/placeholders/video1.mp4",
     highlight: true
   },
   icons: [
     {
       title: "Yachthouse by Pininfarina",
-      location: "Balneário Camboriú | Barra Sul",
-      image: imgDamha2,
-      summary: "Um marco da engenharia e arquitetura de luxo no Brasil com assinatura Pininfarina. Com 294 metros de altura, é um dos edifícios residenciais mais altos da América Latina oferecendo vista panorâmica definitiva para o mar e marina.",
+      location: "Centro | Balneário Camboriú - SC",
+      image: imgYachthouse,
+      summary: "Inspirado no luxuoso universo náutico, o Yachthouse by Pininfarina está localizado junto à Marina Tedesco. Oferece vista magnífica para o mar, o verde da Mata Atlântica e o Rio Camboriú com infraestrutura completa.",
       specs: [
-        "4 Suítes | 4 Vagas",
-        "Frente Mar | Barra Sul",
-        "Hall privativo",
-        "Assinatura Pininfarina"
+        "4 Suítes (1 Master)",
+        "4 Vagas | 265 m²",
+        "Vista para o mar e marina",
+        "Pronto para morar"
       ],
       audience: "Investidores de alto patrimônio, empresários e executivos que buscam exclusividade, status patrimonial e localização premium.",
       price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      cta: "Fale com a gente"
     },
     {
       title: "One Tower",
-      location: "Balneário Camboriú | Barra Sul",
-      image: imgAlpha4,
-      summary: "Um dos empreendimentos mais emblemáticos de BC com 290 metros de altura. Lajes amplas, dois apartamentos por andar e propostas de viver com conforto e sofisticação inigualáveis no mercado premium catarinense.",
+      location: "Barra Sul | Balneário Camboriú - SC",
+      image: imgOneTower,
+      summary: "Localizado na Avenida Atlântica, o One Tower é o prédio mais alto do Brasil frente mar, com mais de 290 metros de altura e 84 pavimentos. Oferece uma vista panorâmica inigualável.",
       specs: [
         "4 Suítes | 3 Vagas",
-        "Frente Mar | Living Integrado",
-        "Apenas 2 unidades por andar",
-        "Concluído (Pronto)"
+        "Frente Mar | 196 m²",
+        "290 metros de altura",
+        "Pronto para morar"
       ],
       audience: "Clientes exigentes por experiência de vida premium e compradores estratégicos com foco em patrimônio imobiliário de altíssimo nível.",
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      price: "R$ 13.990.000,00",
+      cta: "Fale com a gente"
     }
   ],
   exclusive: [
     {
-      title: "Ená – Praia do Estaleiro",
-      location: "Balneário Camboriú | Praia do Estaleiro",
-      image: imgDamha1,
-      summary: "Raro privilégio de ser pé na areia na preservada Praia do Estaleiro. Um projeto de 'mansões suspensas' exclusivas, com vista mar permanente, ampla customização e total integração com a natureza.",
+      title: "Edifício Ená",
+      location: "Praia do Estaleiro | Balneário Camboriú - SC",
+      image: imgEna,
+      summary: "Apartamento de altíssimo padrão 'pé na areia' com vista mar permanente. Um projeto exclusivo focado em sustentabilidade, tecnologia e conexão direta com a natureza.",
       specs: [
-        "356 m² Privativos",
         "4 Suítes | 4 Vagas",
+        "396 m² Privativos",
         "Pé na areia absoluto",
         "Entrega: Julho/2027"
       ],
       audience: "Investidores de alto patrimônio que priorizam privacidade, exclusividade absoluta e localização natural diferenciada.",
-      price: "R$ 21.774.400,00",
-      cta: "Receber Dossiê"
+      price: "R$ 21.784.400,00",
+      cta: "Fale com a gente"
     },
     {
       title: "Porto Belo Golf Resort",
       location: "Porto Belo | SC",
-      image: imgDamha3,
-      summary: "Terreno exclusivo no primeiro condomínio com campo de golfe iluminado do Brasil. A união perfeita entre segurança, alto padrão, contato com a natureza e forte valorização patrimonial.",
+      image: imgPortoBeloGolf,
+      summary: "Lote exclusivo no primeiro condomínio com campo de golfe iluminado do Brasil. A união perfeita entre segurança, alto padrão, contato com a natureza e lazer sem precedentes.",
       specs: [
-        "Terreno em Condomínio",
-        "543 m² privativos",
+        "Lote de Alto Padrão",
+        "543 m² Privativos",
         "Campo de Golfe Iluminado",
-        "Segurança 24h e Resort Lifestyle"
+        "Pistas, Quadras e Resort"
       ],
       audience: "Famílias e investidores que buscam segurança, planejamento urbano e a criação de um lar totalmente personalizado em um ambiente seleto.",
       price: "R$ 3.800.000,00",
-      cta: "Explorar Terreno"
+      cta: "Fale com a gente"
     }
   ],
   liquidity: [
     {
       title: "Atlantic Paradise",
-      location: "Itapema | Meia Praia",
-      image: imgDamha4,
-      summary: "Apartamento de altíssimo padrão frente mar em uma região de altíssima liquidez. Ambientes totalmente mobiliados, climatizados e ampla varanda gourmet com vista panorâmica.",
+      location: "Meia Praia | Itapema - SC",
+      image: imgAtlantic,
+      summary: "Apartamento mobiliado e decorado de alto padrão em Meia Praia. Planta ampla, sofisticada e funcional com vista panorâmica deslumbrante para o mar. Varanda gourmet e muito requinte.",
       specs: [
         "281 m² Privativos",
         "4 Suítes | 3 Vagas",
@@ -107,129 +114,121 @@ export const propertiesData = {
       ],
       audience: "Investidores patrimoniais que buscam ativo sólido frente mar, pronto para uso e com grande potencial de valorização e locação premium.",
       price: "R$ 13.420.000,00",
-      paymentCondition: "40% de entrada + saldo em 48x",
-      cta: "Saber Mais"
+      paymentCondition: "Consulte as condições",
+      cta: "Fale com a gente"
     },
     {
       title: "Namar Phacz Home",
-      location: "Porto Belo | Perequê",
-      image: imgAlpha5,
-      summary: "Lançamento com arquitetura contemporânea em um dos bairros com maior crescimento e valorização do litoral. Ambientes amplos perfeitamente integrados ao entorno natural.",
+      location: "Perequê | Porto Belo - SC",
+      image: imgNamar,
+      summary: "Empreendimento que une arquitetura assinada, sustentabilidade e bem-estar. Localizado frente ao mar, focado na harmonia com o ambiente e com mais de 2.133 m² de infraestrutura e lazer.",
       specs: [
-        "2 a 4 Suítes",
-        "Lançamento Alto Padrão",
-        "Arquitetura Contemporânea",
-        "Plantas Amplas Integradas"
+        "3 a 4 Suítes",
+        "Pré-lançamento Frente Mar",
+        "Arquitetura Assinada",
+        "Plantas até 411 m²"
       ],
       audience: "Investidores estratégicos visando ganho de capital até a entrega e diversificação de portfólio no novo eixo de expansão imobiliária.",
       price: "Valor sob consulta",
-      cta: "Acessar Tabela (Venda Exclusiva)"
+      cta: "Fale com a gente"
     }
   ],
   ms_properties: [
     {
-      title: "Residencial Alphaville 2",
-      location: "Alphaville",
-      image: imgAlpha1,
-      summary: "Excelente oportunidade no condomínio Alphaville.",
-      specs: ["Cód. 555"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      title: "Residencial Alphaville 2 - Puro Luxo",
+      location: "Residencial Alphaville 2 | Campo Grande - MS",
+      image: imgAlpha555,
+      summary: "Considerada uma das casas mais incríveis dos Alphavilles, oferece espaços grandiosos, tecnologia de ponta, automação e lazer magnífico.",
+      specs: ["4 Suítes | 4 Vagas", "544 m² Construídos", "Cód. 555"],
+      price: "R$ 9.000.000,00",
+      cta: "Fale com a gente"
     },
     {
-      title: "Clinton-R296",
-      location: "Alphaville",
-      image: imgAlpha2,
-      summary: "Residência de alto padrão no Alphaville.",
-      specs: ["Cód. 608"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      title: "Casa com 4 Suítes - Alphaville",
+      location: "Residencial Alphaville | Campo Grande - MS",
+      image: imgAlpha608,
+      summary: "Residência de alto padrão construída por construtora renomada. Rica em detalhes, conforto e área de lazer impressionante com paisagismo e piscina aquecida.",
+      specs: ["4 Suítes", "328 m² Construídos", "Cód. 608"],
+      price: "R$ 3.800.000,00",
+      cta: "Fale com a gente"
     },
     {
-      title: "Alphaville I - Sobrado Novo",
-      location: "Alphaville",
-      image: imgAlpha3,
-      summary: "Sobrado recém construído no prestigiado Alphaville I.",
-      specs: ["Cód. 692"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
-    },
-    {
-      title: "Alto Padrão Neoclássico",
-      location: "Alphaville III",
-      image: imgAlpha4,
-      summary: "Elegante residência de estilo neoclássico no Alphaville III.",
-      specs: ["Cód. 724"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      title: "Sobrado Neoclássico",
+      location: "Residencial Alphaville 3 | Campo Grande - MS",
+      image: imgAlpha724,
+      summary: "Sobrado neoclássico de alto padrão. O projeto destaca-se pelos acabamentos nobres, como ônix translúcido e bancadas em Michelangelo e Nanoglass, com design assinado.",
+      specs: ["3 Suítes | 4 Vagas", "275 m² Construídos", "Cód. 724"],
+      price: "R$ 3.200.000,00",
+      cta: "Fale com a gente"
     },
     {
       title: "Exclusiva Casa Térrea de Esquina",
-      location: "Alphaville III",
-      image: imgAlpha5,
-      summary: "Casa térrea espaçosa e exclusiva em localização privilegiada.",
-      specs: ["Cód. 746"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      location: "Residencial Alphaville 3 | Campo Grande - MS",
+      image: imgAlpha746,
+      summary: "Linda casa térrea de esquina com projeto moderno. Construída com materiais e marcenaria de primeira linha, amplo living integrado e lazer com piscina.",
+      specs: ["4 Suítes | 6 Vagas", "306 m² Construídos", "Cód. 746"],
+      price: "R$ 3.500.000,00",
+      cta: "Fale com a gente"
     },
     {
-      title: "Sonho e Realidade",
-      location: "Damha",
-      image: imgDamha1,
-      summary: "Uma verdadeira realização de alto padrão no Damha.",
-      specs: ["Cód. 167"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      title: "Sobrado Luxuoso no Damha II",
+      location: "Residencial Damha II | Campo Grande - MS",
+      image: imgDamha167,
+      summary: "Magnífico sobrado de esquina com projeto moderno e exclusivo. Oferece ambientes amplos com iluminação natural, acabamentos refinados e varanda gourmet completa.",
+      specs: ["4 Suítes | 4 Vagas", "352 m² Construídos", "Cód. 167"],
+      price: "R$ 5.500.000,00",
+      cta: "Fale com a gente"
     },
     {
-      title: "Alto padrão no Damha I",
-      location: "Damha I",
-      image: imgDamha2,
-      summary: "Residência imponente e sofisticada no Damha I.",
-      specs: ["Cód. 184"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      title: "Alto Padrão no Damha I",
+      location: "Residencial Damha I | Campo Grande - MS",
+      image: imgDamha184,
+      summary: "Residência de altíssimo luxo localizada no Residencial Damha I. O imóvel conta com 6 suítes e infraestrutura de lazer completa, para máximo conforto.",
+      specs: ["6 Suítes | 8 Vagas", "709 m² Construídos", "Cód. 184"],
+      price: "R$ 12.900.000,00",
+      cta: "Fale com a gente"
     },
     {
-      title: "Alto padrão Damha I - 5 Suítes",
-      location: "Damha I",
-      image: imgDamha3,
-      summary: "Amplo espaço e conforto ideal para famílias.",
-      specs: ["5 Suítes", "Cód. 200"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      title: "Sobrado Contemporâneo",
+      location: "Residencial Damha I | Campo Grande - MS",
+      image: imgDamha200,
+      summary: "Sobrado novo com fachada moderna e projeto contemporâneo. Integração perfeita entre os ambientes, espaço gourmet amplo e lazer com piscina aquecida.",
+      specs: ["5 Suítes | 6 Vagas", "443 m² Construídos", "Cód. 200"],
+      price: "R$ 6.200.000,00",
+      cta: "Fale com a gente"
     },
     {
-      title: "Alto Padrão no Damha III - 4 Suítes",
-      location: "Damha III",
-      image: imgDamha4,
-      summary: "Excelente distribuição com 4 suítes plenas no Damha III.",
-      specs: ["4 Suítes", "Cód. 214"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      title: "Casa Térrea de Esquina",
+      location: "Residencial Damha III | Campo Grande - MS",
+      image: imgDamha208,
+      summary: "Casa térrea de esquina com projeto elegante e funcional. Destaca-se pelos ambientes integrados e acabamentos de alto padrão com piscina aquecida e sauna.",
+      specs: ["2 Suítes | 4 Vagas", "215 m² Construídos", "Cód. 208"],
+      price: "R$ 3.000.000,00",
+      cta: "Fale com a gente"
     },
     {
-      title: "Alto Padrão e Conforto: Casa Térrea",
-      location: "Damha",
-      image: imgDamha5,
-      summary: "Casa térrea de esquina, unindo luxo e praticidade.",
-      specs: ["Cód. 208"],
-      price: "Valor sob consulta",
-      cta: "Agendar Visita"
+      title: "Alto Padrão no Damha III",
+      location: "Residencial Damha III | Campo Grande - MS",
+      image: imgDamha214,
+      summary: "Sobrado de alto padrão projetado para quem valoriza sofisticação, conforto e bom gosto. O imóvel é rico em móveis planejados, climatizado e lazer completo.",
+      specs: ["4 Suítes | 4 Vagas", "290 m² Construídos", "Cód. 214"],
+      price: "R$ 3.800.000,00",
+      cta: "Fale com a gente"
     }
   ],
   videos: [
     {
       title: "Tour Exclusivo: Brava Home Resort",
       location: "Praia Brava | Itajaí",
-      thumbnail: imgAlpha1,
+      thumbnail: imgBrava,
       videoUrl: "/placeholders/video1.mp4"
     },
     {
       title: "A Experiência Yachthouse",
       location: "Balneário Camboriú",
-      thumbnail: imgDamha2,
+      thumbnail: imgYachthouse,
       videoUrl: "/placeholders/video2.mp4"
     }
   ]
 };
+

@@ -16,7 +16,7 @@ export const Home = () => {
   return (
     <div className="w-full bg-aurea-dark text-aurea-light min-h-scree ">
       {/* Hero Section */}
-      <section className="relative min-h-screen h-auto w-full flex flex-col justify-end overflow-hidden pb-8 md:pb-12 pt-40 md:pt-48">
+      <section className="relative min-h-screen h-auto w-full flex flex-col justify-end overflow-hidden pb-8 md:pb-12 pt-24 md:pt-32">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <video
             src={videobg}
@@ -33,7 +33,7 @@ export const Home = () => {
 
         <BackgroundGrid />
 
-        <div className="relative z-10 w-full px-6 md:px-12 max-w-[1600px] mx-auto flex flex-col items-center justify-center flex-grow text-center py-12 mt-8 lg:mt-16">
+        <div className="relative z-10 w-full px-6 md:px-12 max-w-[1600px] mx-auto flex flex-col items-center justify-center flex-grow text-center py-12 mt-4 lg:mt-8">
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -41,10 +41,10 @@ export const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col items-center z-20 w-full"
           >
-            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-aurea-gold mb-6 md:mb-8 leading-tight uppercase tracking-tighter max-w-4xl mx-auto">
-              Onde arquitetura e valor caminham juntos.
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-aurea-gold mb-2 md:mb-4 leading-tight uppercase tracking-tighter max-w-4xl mx-auto">
+              IMÓVEIS, PATRIMÔNIO & VISÃO
             </h2>
-            <p className="font-sans text-aurea-light/80 text-sm md:text-base leading-relaxed mb-8 md:mb-10 text-balance uppercase tracking-wider max-w-2xl mx-auto">
+            <p className="font-sans text-aurea-light/80 text-sm md:text-base leading-relaxed mb-2 md:mb-4 text-balance uppercase tracking-wider max-w-2xl mx-auto">
               A curadoria definitiva para investidores que não buscam apenas metro quadrado, mas ativos de alta liquidez e segurança patrimonial. A conexão direta e exclusiva entre o Mato Grosso do Sul e o litoral de Santa Catarina.
             </p>
             <Link to="/portfolio" className="inline-flex items-center justify-center rounded-full border border-aurea-gold text-aurea-gold px-8 py-4 md:px-10 md:py-5 font-sans font-medium uppercase tracking-[0.2em] text-[10px] md:text-xs hover:bg-aurea-gold hover:text-aurea-dark transition-all duration-500 mb-12 lg:mb-16 group">
@@ -66,40 +66,12 @@ export const Home = () => {
               <img src={aureaGradient} alt="Aurea" className="w-full relative z-0" />
             </motion.h1>
 
-            {/* Floating Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="relative z-20 w-full bg-aurea-surface border border-white/5 p-6 md:p-8 md:w-[420px] shadow-2xl flex flex-col gap-6 backdrop-blur-sm text-left mx-auto"
-            >
-              <div className="flex items-center gap-5">
-                <img
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop"
-                  alt="Tatá Marques"
-                  className="w-14 h-14 md:w-16 md:h-16 object-cover grayscale rounded-full border border-aurea-gold/30 p-1"
-                  referrerPolicy="no-referrer"
-                />
-                <div>
-                  <p className="font-sans text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-aurea-gold/80 mb-2 flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-aurea-gold rounded-full"></span>
-                    Assessoria VIP
-                  </p>
-                  <p className="font-serif text-xl md:text-2xl text-aurea-light leading-none uppercase tracking-tighter">Fale com a Diretoria</p>
-                </div>
-              </div>
-              <Link to="/contato" className="flex items-center justify-between group border-t border-white/10 pt-5">
-                <span className="font-sans text-[10px] md:text-xs uppercase tracking-widest text-aurea-light/70 group-hover:text-aurea-gold transition-colors">Agendar consultoria</span>
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-white/5 border border-white/10 text-aurea-gold flex items-center justify-center group-hover:bg-aurea-gold group-hover:text-aurea-dark transition-all duration-300">
-                  <ArrowRight size={16} className="text-aurea-gold transform -rotate-45 group-hover:text-aurea-dark transition-colors" />
-                </div>
-              </Link>
-            </motion.div>
+
           </div>
         </div>
       </section>
 
-      {/* Section Expert: Tatá Marques */}
+      {/* Section Expert: Tatá Marques  - AQUI VAI VIR O VIDEO DO TATA QUE VAI FICAR PRONTO SEXTA FEIRA*/}
       <section className="py-32 px-6 md:px-12 max-w-[1600px] mx-auto relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Image Side */}
@@ -198,36 +170,26 @@ export const Home = () => {
       {/* Section 3: Advantages Layout */}
       <section className="py-24 px-6 md:px-12 max-w-[1600px] mx-auto border-y border-white/5 relative overflow-hidden">
         <div className="absolute inset-0 bg-aurea-surface/50"></div>
-        <div className="flex flex-row relative z-10 w-full gap-6 md:gap-0">
-          {/* Numbers */}
-          <div className="flex flex-col justify-between text-aurea-light font-serif text-5xl sm:text-6xl md:text-8xl lg:text-[8rem] leading-[0.8] tracking-tighter w-[35%] md:w-auto md:flex-1">
-            <div className="border-b border-white/5 pb-8 lg:pb-12 text-aurea-gold">100%</div>
-            <div className="border-b border-white/5 py-8 lg:py-12">+50</div>
-            <div className="border-b border-white/5 py-8 lg:py-12">15</div>
-            <div className="pt-8 lg:pt-12 text-aurea-gold">24/7</div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-6 relative z-10 w-full text-center">
+          {/* Item 1 */}
+          <div className="flex flex-col items-center justify-center group lg:border-r border-white/5">
+            <div className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] text-aurea-gold mb-6 leading-[0.8] tracking-tighter">100%</div>
+            <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-gold transition-colors">Ativos Selecionados</div>
           </div>
-
-          {/* Vertical Text */}
-          <div className="hidden md:flex items-center justify-center px-8 lg:px-24 bg-white/5 border-x border-white/5 mx-8 lg:mx-24 backdrop-blur-sm">
-            <span className="font-sans text-3xl lg:text-5xl tracking-[0.3em] uppercase font-light text-aurea-gold" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
-              Exclusividade
-            </span>
+          {/* Item 2 */}
+          <div className="flex flex-col items-center justify-center group lg:border-r border-white/5">
+            <div className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] text-aurea-light mb-6 leading-[0.8] tracking-tighter">+50</div>
+            <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-light transition-colors">Parceiros Estratégicos</div>
           </div>
-
-          {/* Labels */}
-          <div className="flex-1 flex flex-col justify-between font-sans text-[11px] sm:text-sm md:text-xl lg:text-3xl uppercase tracking-widest text-aurea-light/70 mt-4 md:mt-0">
-            <div className="border-b border-white/5 pb-8 lg:pb-12 flex items-center md:items-end justify-start h-full group">
-              <span className="group-hover:text-aurea-gold transition-colors flex items-center gap-4"><span className="w-8 h-[1px] bg-aurea-gold/50 hidden lg:block"></span>Ativos Selecionados</span>
-            </div>
-            <div className="border-b border-white/5 py-8 lg:py-12 flex items-center md:items-end justify-start h-full group">
-              <span className="group-hover:text-aurea-light transition-colors flex items-center gap-4"><span className="w-8 h-[1px] bg-white/20 hidden lg:block"></span>Parceiros Estratégicos</span>
-            </div>
-            <div className="border-b border-white/5 py-8 lg:py-12 flex items-center md:items-end justify-start h-full group">
-              <span className="group-hover:text-aurea-light transition-colors flex items-center gap-4"><span className="w-8 h-[1px] bg-white/20 hidden lg:block"></span>Anos de Experiência</span>
-            </div>
-            <div className="pt-8 lg:pt-12 flex items-center md:items-end justify-start h-full group">
-              <span className="group-hover:text-aurea-gold transition-colors flex items-center gap-4"><span className="w-8 h-[1px] bg-aurea-gold/50 hidden lg:block"></span>Assessoria VIP</span>
-            </div>
+          {/* Item 3 */}
+          <div className="flex flex-col items-center justify-center group lg:border-r border-white/5 mt-8 lg:mt-0">
+            <div className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] text-aurea-light mb-6 leading-[0.8] tracking-tighter">15</div>
+            <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-light transition-colors">Anos de Experiência</div>
+          </div>
+          {/* Item 4 */}
+          <div className="flex flex-col items-center justify-center group mt-8 lg:mt-0">
+            <div className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] text-aurea-gold mb-6 leading-[0.8] tracking-tighter">24/7</div>
+            <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-gold transition-colors">Inovação Contínua</div>
           </div>
         </div>
       </section>
@@ -361,16 +323,16 @@ export const Home = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-white/5">
           <div className="relative bg-aurea-dark overflow-hidden flex items-center justify-center min-h-[500px]">
             <div className="w-full h-full absolute inset-0">
-               <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-                 <iframe 
-                   src="https://player.vimeo.com/video/1173358742?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;background=1&amp;autoplay=1&amp;loop=1&amp;byline=0&amp;title=0" 
-                   frameBorder="0" 
-                   allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                   style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
-                   title="TATÁ MARQUES CORRETOR TERRENO"
-                 ></iframe>
-               </div>
-               <script src="https://player.vimeo.com/api/player.js"></script>
+              <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1173358742?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;background=1&amp;autoplay=1&amp;loop=1&amp;byline=0&amp;title=0"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                  title="TATÁ MARQUES CORRETOR TERRENO"
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
             <div className="absolute inset-0 bg-aurea-dark/20 pointer-events-none"></div>
             <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 flex items-center gap-4">
