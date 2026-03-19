@@ -16,7 +16,7 @@ export const Home = () => {
   return (
     <div className="w-full bg-aurea-dark text-aurea-light min-h-scree ">
       {/* Hero Section */}
-      <section className="relative min-h-screen h-auto w-full flex flex-col justify-end overflow-hidden pb-8 md:pb-12 pt-24 md:pt-32">
+      <section className="relative min-h-screen h-auto w-full flex flex-col justify-center overflow-hidden pb-8 md:pb-12 pt-24 md:pt-32">
         <div className="absolute inset-0 z-0 pointer-events-none">
           <video
             src={videobg}
@@ -33,7 +33,7 @@ export const Home = () => {
 
         <BackgroundGrid />
 
-        <div className="relative z-10 w-full px-6 md:px-12 max-w-[1600px] mx-auto flex flex-col items-center justify-center flex-grow text-center py-12 mt-4 lg:mt-8">
+        <div className="relative z-10 w-full px-6 md:px-12 max-w-[1600px] mx-auto flex flex-col items-center justify-center flex-grow text-center py-12 -mt-8 md:-mt-10 lg:-mt-8">
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -173,23 +173,23 @@ export const Home = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-6 relative z-10 w-full text-center">
           {/* Item 1 */}
           <div className="flex flex-col items-center justify-center group lg:border-r border-white/5">
-            <div className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] text-aurea-gold mb-6 leading-[0.8] tracking-tighter">100%</div>
-            <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-gold transition-colors">Ativos Selecionados</div>
+
+            <div className="font-sans text-[16px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-gold transition-colors">Ativos Selecionados</div>
           </div>
           {/* Item 2 */}
           <div className="flex flex-col items-center justify-center group lg:border-r border-white/5">
-            <div className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] text-aurea-light mb-6 leading-[0.8] tracking-tighter">+50</div>
-            <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-light transition-colors">Parceiros Estratégicos</div>
+
+            <div className="font-sans text-[16px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-light transition-colors">Parceiros Estratégicos</div>
           </div>
           {/* Item 3 */}
           <div className="flex flex-col items-center justify-center group lg:border-r border-white/5 mt-8 lg:mt-0">
-            <div className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] text-aurea-light mb-6 leading-[0.8] tracking-tighter">15</div>
-            <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-light transition-colors">Anos de Experiência</div>
+
+            <div className="font-sans text-[16px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-light transition-colors">Anos de Experiência</div>
           </div>
           {/* Item 4 */}
           <div className="flex flex-col items-center justify-center group mt-8 lg:mt-0">
-            <div className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] text-aurea-gold mb-6 leading-[0.8] tracking-tighter">24/7</div>
-            <div className="font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-gold transition-colors">Inovação Contínua</div>
+
+            <div className="font-sans text-[16px] md:text-[11px] uppercase tracking-[0.2em] text-aurea-light/70 group-hover:text-aurea-gold transition-colors">Inovação Contínua</div>
           </div>
         </div>
       </section>

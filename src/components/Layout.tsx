@@ -127,8 +127,8 @@ export const Layout = () => {
         </div>
 
         <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 font-sans text-xs text-aurea-light/40 uppercase tracking-widest">
-          <p>&copy; {new Date().getFullYear()} Áurea. Todos os direitos reservados.</p>
-          <p>Design by <a className='text-aurea-gold' href="https://feharistudio.com.br" target="_blank" rel="noopener noreferrer">Fehari Studio</a></p>
+          <p>&copy; {new Date().getFullYear()} Revista Áurea. Todos os direitos reservados.</p>
+
         </div>
       </footer>
     </div>

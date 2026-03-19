@@ -16,6 +16,9 @@ import imgDamha184 from '../assets/imoveis_organizados/campo_grande/damha_i_inte
 import imgDamha200 from '../assets/imoveis_organizados/campo_grande/damha_i_fachada_01_cod_200.webp';
 import imgDamha208 from '../assets/imoveis_organizados/campo_grande/damha_iii_fachada_01_cod_208.webp';
 import imgDamha214 from '../assets/imoveis_organizados/campo_grande/damha_iii_fachada_01_cod_214.webp';
+import imgDamha209 from '../assets/imoveis_organizados/campo_grande/damha_i_mansao_01_cod_209.webp';
+import imgDamha213 from '../assets/imoveis_organizados/campo_grande/damha_ii_fachada_01_cod_213.webp';
+import imgDamha217 from '../assets/imoveis_organizados/campo_grande/damha_ii_fachada_01_cod_217.webp';
 
 export const propertiesData = {
   highlight: {
@@ -97,6 +100,21 @@ export const propertiesData = {
       ],
       audience: "Famílias e investidores que buscam segurança, planejamento urbano e a criação de um lar totalmente personalizado em um ambiente seleto.",
       price: "R$ 3.800.000,00",
+      cta: "Fale com a gente"
+    },
+    {
+      title: "Cobertura no Edifício Horizon",
+      location: "Praia Brava | Itajaí - SC",
+      image: imgBrava, // Placeholder: image for Ref 2415 not found
+      summary: "Uma cobertura exclusiva que une amplitude, sofisticação e uma área externa incrível na Praia Brava. Oferece conforto e privacidade absoluta.",
+      specs: [
+        "4 Suítes (1 Master)",
+        "340 m² Privativos",
+        "Piscina Privativa",
+        "Ref. 2415"
+      ],
+      audience: "Público focado em exclusividade e lifestyle náutico na região mais valorizada de Itajaí.",
+      price: "R$ 12.500.000,00",
       cta: "Fale com a gente"
     }
   ],
@@ -213,6 +231,51 @@ export const propertiesData = {
       summary: "Sobrado de alto padrão projetado para quem valoriza sofisticação, conforto e bom gosto. O imóvel é rico em móveis planejados, climatizado e lazer completo.",
       specs: ["4 Suítes | 4 Vagas", "290 m² Construídos", "Cód. 214"],
       price: "R$ 3.800.000,00",
+      cta: "Fale com a gente"
+    },
+    {
+      title: "Mansão Cinematográfica no Damha I",
+      location: "Residencial Damha I | Campo Grande - MS",
+      image: imgDamha209,
+      summary: "Residência única e inigualável no Damha I, construída sobre cinco terrenos. Oferece infraestrutura de lazer e tecnologia sem precedentes.",
+      specs: ["Suítes de Luxo | 5 Vagas", "1.450 m² Construídos", "Cód. 209"],
+      price: "R$ 26.000.000,00",
+      cta: "Fale com a gente"
+    },
+    {
+      title: "Sobrado de Esquina no Damha II",
+      location: "Residencial Damha II | Campo Grande - MS",
+      image: imgDamha213,
+      summary: "Sobrado de esquina luxuoso com ambientes integrados e acabamentos de alto padrão. Área de lazer completa integrada à praça do condomínio.",
+      specs: ["4 Suítes | 4 Vagas", "457 m² Construídos", "Cód. 213"],
+      price: "R$ 6.200.000,00",
+      cta: "Fale com a gente"
+    },
+    {
+      title: "Casa de Alto Padrão - Damha II",
+      location: "Residencial Damha II | Campo Grande - MS",
+      image: imgDamha217,
+      summary: "Projeto moderno e funcional com acabamento de alto padrão. Completo em móveis planejados e sistema de energia fotovoltaica.",
+      specs: ["4 Suítes | 4 Vagas", "302 m² Construídos", "Cód. 217"],
+      price: "R$ 3.800.000,00",
+      cta: "Fale com a gente"
+    },
+    {
+      title: "Sobrado de Esquina - Damha IV",
+      location: "Residencial Damha IV | Campo Grande - MS",
+      image: imgDamha200, // Placeholder
+      summary: "Sobrado de alto padrão em lote de esquina no Residencial Damha IV com infraestrutura completa para lazer e trabalho.",
+      specs: ["4 Suítes | 2 Vagas", "393 m² Construídos", "Cód. 219"],
+      price: "R$ 5.500.000,00",
+      cta: "Fale com a gente"
+    },
+    {
+      title: "Alto Padrão para Locação - Damha III",
+      location: "Residencial Damha III | Campo Grande - MS",
+      image: imgDamha214, // Placeholder
+      summary: "Residência de alto padrão semi-mobiliada no Residencial Damha III, oferecendo praticidade e sofisticação para locação.",
+      specs: ["4 Dormitórios", "264 m² Construídos", "Cód. 218"],
+      price: "R$ 15.000,00 /mês",
       cta: "Fale com a gente"
     }
   ],

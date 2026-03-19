@@ -36,6 +36,7 @@ Este documento contém o resumo de todos os imóveis extraídos dos links fornec
 | Imóvel | Referência | Dormitórios | Garagens | Preço (R$) |
 | :--- | :--- | :--- | :--- | :--- |
 | Brava Home Resort | 2363 | 4 Quartos | 4 | Sob consulta |
+| Edifício Horizon | 2415 | 4 Suítes | 4 | 12.500.000,00 |
 
 ---
 
@@ -52,6 +53,11 @@ Este documento contém o resumo de todos os imóveis extraídos dos links fornec
 | Alphaville | 608 | 4 Suítes | 328 m² | 3.800.000,00 |
 | Alphaville 3 | 724 | 3 Suítes | 275 m² | 3.200.000,00 |
 | Alphaville 3 | 746 | 4 Suítes | 306 m² | 3.500.000,00 |
+| Residencial Damha I | 209 | n/a | 1.450 m² | 26.000.000,00 |
+| Residencial Damha II | 213 | 4 Suítes | 457 m² | 6.200.000,00 |
+| Residencial Damha II | 217 | 4 Suítes | 302 m² | 3.800.000,00 |
+| Residencial Damha IV | 219 | 4 Suítes | 393 m² | 5.500.000,00 |
+| Residencial Damha III | 218 | 4 Dorm. | 264 m² | 15.000,00 (Locação) |
 
 *Nota: O link para o código 692 apresentou erro de carregamento e não pôde ser extraído.*
 
