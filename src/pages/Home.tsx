@@ -217,7 +217,7 @@ export const Home = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {/* Item 1 */}
-          <Link to="/portfolio" className="group flex flex-col h-full bg-aurea-surface border border-white/5 hover:border-aurea-gold/30 transition-all duration-500 overflow-hidden">
+          <Link to="/portfolio/yachthouse" className="group flex flex-col h-full bg-aurea-surface border border-white/5 hover:border-aurea-gold/30 transition-all duration-500 overflow-hidden">
             <div className="p-6 md:p-8 flex-grow">
               <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-aurea-gold/60 mb-2 block">Balneário Camboriú</span>
               <h3 className="font-serif text-2xl lg:text-3xl uppercase tracking-tighter text-aurea-light mb-6">Yachthouse</h3>
@@ -242,7 +242,7 @@ export const Home = () => {
           </Link>
 
           {/* Item 2 */}
-          <Link to="/portfolio" className="group flex flex-col-reverse lg:flex-col h-full bg-aurea-surface border border-white/5 hover:border-aurea-gold/30 transition-all duration-500 overflow-hidden mt-0 lg:mt-12">
+          <Link to="/portfolio/ena" className="group flex flex-col-reverse lg:flex-col h-full bg-aurea-surface border border-white/5 hover:border-aurea-gold/30 transition-all duration-500 overflow-hidden mt-0 lg:mt-12">
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10"></div>
               <img
@@ -267,7 +267,7 @@ export const Home = () => {
           </Link>
 
           {/* Item 3 */}
-          <Link to="/portfolio" className="group flex flex-col h-full bg-aurea-surface border border-aurea-gold/30 relative overflow-hidden shadow-[0_0_30px_rgba(202,176,131,0.05)]">
+          <Link to="/portfolio/brava-home" className="group flex flex-col h-full bg-aurea-surface border border-aurea-gold/30 relative overflow-hidden shadow-[0_0_30px_rgba(202,176,131,0.05)]">
             <div className="absolute top-4 left-4 z-20 bg-aurea-gold text-aurea-dark px-3 py-1 text-[8px] font-sans font-bold uppercase tracking-widest">A Joia da Coroa</div>
             <div className="p-6 md:p-8 flex-grow">
               <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-aurea-gold/60 mb-2 block">Praia Brava | Itajaí</span>
@@ -292,7 +292,7 @@ export const Home = () => {
           </Link>
 
           {/* Item 4 */}
-          <Link to="/portfolio" className="group flex flex-col-reverse lg:flex-col h-full bg-aurea-surface border border-white/5 hover:border-aurea-gold/30 transition-all duration-500 overflow-hidden mt-0 lg:mt-12">
+          <Link to="/portfolio/one-tower" className="group flex flex-col-reverse lg:flex-col h-full bg-aurea-surface border border-white/5 hover:border-aurea-gold/30 transition-all duration-500 overflow-hidden mt-0 lg:mt-12">
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10"></div>
               <img

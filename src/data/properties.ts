@@ -1,31 +1,115 @@
-import imgBrava from '../assets/imoveis_organizados/itajai/brava_home_resort_piscina_privativa_01_ref_2363.webp';
-import imgYachthouse from '../assets/imoveis_organizados/balneario_camboriu/yachthouse_fachada_01_ref_1989.webp';
-import imgOneTower from '../assets/imoveis_organizados/balneario_camboriu/one_tower_fachada_01_ref_1026.webp';
-import imgEna from '../assets/imoveis_organizados/balneario_camboriu/ena_fachada_01_ref_2251.webp';
-import imgPortoBeloGolf from '../assets/imoveis_organizados/porto_belo/porto_belo_golf_vista_aerea_01_ref_2339.webp';
-import imgAtlantic from '../assets/imoveis_organizados/itapema/atlantic_paradise_interior_01_ref_2283.webp';
-import imgNamar from '../assets/imoveis_organizados/porto_belo/namar_phacz_home_fachada_01.webp';
+import imgBrava from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_home_resort_piscina_privativa_01_ref_2363.webp';
+import imgBrava02 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_02.png';
+import imgBrava03 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_03.jpeg';
+import imgBrava04 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_04.jpeg';
+import imgBrava05 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_05.jpeg';
+import imgBrava06 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_06.jpeg';
+import imgBrava07 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_07.jpeg';
+import imgBrava08 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_08.jpeg';
+import imgBrava09 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_09.jpeg';
+import imgBrava10 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_10.jpeg';
+import imgBrava11 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_11.jpeg';
+import imgBrava12 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_12.png';
+import imgBrava13 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_13.jpeg';
+import imgBrava14 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_14.jpeg';
+import imgBrava15 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_15.jpeg';
+import imgBrava16 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_16.jpeg';
+import imgBrava17 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_17.jpeg';
+import imgBrava18 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava-18.jpeg';
+import imgBrava19 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_19.jpeg';
+import imgBrava20 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_20.jpeg';
+import imgYachthouse from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yachthouse_fachada_01_ref_1989.webp';
+import imgOneTower from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/one_tower_fachada_01_ref_1026.webp';
+import imgEna from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_fachada_01_ref_2251.webp';
+import imgEna02 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_02.jpg';
+import imgEna03 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_03.jpg';
+import imgEna04 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_04.jpg';
+import imgEna05 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_05.jpg';
+import imgEna06 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_06.jpg';
+import imgEna07 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_07.jpg';
+import imgEna08 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_08.jpg';
+import imgEna09 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_09.jpg';
+import imgEna10 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_10.jpg';
+import imgEna11 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_11.jpg';
+import imgEna12 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_12.jpg';
+import imgEna13 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_13.jpg';
+import imgEna14 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_14.jpg';
+import imgEna15 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_15.jpg';
+import imgEna16 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_16.jpg';
+import imgEna17 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_17.jpg';
+import imgPortoBeloGolf from '../assets/imoveis_organizados/porto_belo/imovel_ref_2339/porto_belo_golf_vista_aerea_01_ref_2339.webp';
+import imgAtlantic from '../assets/imoveis_organizados/itapema/imovel_ref_2283/atlantic_paradise_interior_01_ref_2283.webp';
+import imgNamar from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/namar_phacz_home_fachada_01.webp';
 
 // Campo Grande - MS
-import imgAlpha555 from '../assets/imoveis_organizados/campo_grande/alphaville_2_fachada_01_cod_555.webp';
-import imgAlpha608 from '../assets/imoveis_organizados/campo_grande/alphaville_fachada_01_cod_608.webp';
-import imgAlpha724 from '../assets/imoveis_organizados/campo_grande/alphaville_3_fachada_01_cod_724.webp';
-import imgAlpha746 from '../assets/imoveis_organizados/campo_grande/alphaville_3_fachada_01_cod_746.webp';
-import imgDamha167 from '../assets/imoveis_organizados/campo_grande/damha_ii_fachada_01_cod_167.webp';
-import imgDamha184 from '../assets/imoveis_organizados/campo_grande/damha_i_interior_01_cod_184.webp';
-import imgDamha200 from '../assets/imoveis_organizados/campo_grande/damha_i_fachada_01_cod_200.webp';
-import imgDamha208 from '../assets/imoveis_organizados/campo_grande/damha_iii_fachada_01_cod_208.webp';
-import imgDamha214 from '../assets/imoveis_organizados/campo_grande/damha_iii_fachada_01_cod_214.webp';
-import imgDamha209 from '../assets/imoveis_organizados/campo_grande/damha_i_mansao_01_cod_209.webp';
-import imgDamha213 from '../assets/imoveis_organizados/campo_grande/damha_ii_fachada_01_cod_213.webp';
-import imgDamha217 from '../assets/imoveis_organizados/campo_grande/damha_ii_fachada_01_cod_217.webp';
+import imgAlpha555 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/alphaville_2_fachada_01_cod_555.webp';
+import imgAlpha608 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/alphaville_fachada_01_cod_608.webp';
+import imgAlpha724 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/alphaville_3_fachada_01_cod_724.webp';
+import imgAlpha746 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/alphaville_3_fachada_01_cod_746.webp';
+import imgDamha167 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/damha_ii_fachada_01_cod_167.webp';
+import imgDamha184 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/damha_i_interior_01_cod_184.webp';
+import imgDamha200 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/damha_i_fachada_01_cod_200.webp';
+import imgDamha208 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/damha_iii_fachada_01_cod_208.webp';
+import imgDamha214 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/damha_iii_fachada_01_cod_214.webp';
+import imgDamha209 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/damha_i_mansao_01_cod_209.webp';
+import imgDamha213 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/damha_ii_fachada_01_cod_213.webp';
+import imgDamha217 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/damha_ii_fachada_01_cod_217.webp';
 
-export const propertiesData = {
+export type Property = {
+  id: string;
+  title: string;
+  location: string;
+  image: string;
+  images?: string[];
+  summary: string;
+  specs?: string[];
+  audience?: string;
+  price?: string;
+  paymentCondition?: string;
+  cta?: string;
+  tag?: string;
+  videoUrl?: string;
+  highlight?: boolean;
+}
+
+export type PropertiesData = {
+  highlight: Property;
+  icons: Property[];
+  exclusive: Property[];
+  liquidity: Property[];
+  ms_properties: Property[];
+  videos: any[];
+}
+
+export const propertiesData: PropertiesData = {
   highlight: {
+    id: "brava-home",
     title: "Brava Home Resort",
     location: "Praia Brava | Itajaí - SC",
     tag: "A Joia da Coroa",
     image: imgBrava,
+    images: [
+      imgBrava,
+      imgBrava02,
+      imgBrava03,
+      imgBrava04,
+      imgBrava05,
+      imgBrava06,
+      imgBrava07,
+      imgBrava08,
+      imgBrava09,
+      imgBrava10,
+      imgBrava11,
+      imgBrava12,
+      imgBrava13,
+      imgBrava14,
+      imgBrava15,
+      imgBrava16,
+      imgBrava17,
+      imgBrava18,
+      imgBrava19,
+      imgBrava20
+    ],
     summary: "Cobertura duplex exclusiva no Brava Home Resort, um dos resorts residenciais mais desejados da Praia Brava. Oferece alto padrão de conforto, sofisticação e uma vista deslumbrante para o mar em um condomínio com mais de 60 mil m² de lazer.",
     specs: [
       "Cobertura Duplex | 360 m²",
@@ -41,9 +125,11 @@ export const propertiesData = {
   },
   icons: [
     {
+      id: "yachthouse",
       title: "Yachthouse by Pininfarina",
       location: "Centro | Balneário Camboriú - SC",
       image: imgYachthouse,
+      images: [imgYachthouse],
       summary: "Inspirado no luxuoso universo náutico, o Yachthouse by Pininfarina está localizado junto à Marina Tedesco. Oferece vista magnífica para o mar, o verde da Mata Atlântica e o Rio Camboriú com infraestrutura completa.",
       specs: [
         "4 Suítes (1 Master)",
@@ -56,9 +142,11 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "one-tower",
       title: "One Tower",
       location: "Barra Sul | Balneário Camboriú - SC",
       image: imgOneTower,
+      images: [imgOneTower],
       summary: "Localizado na Avenida Atlântica, o One Tower é o prédio mais alto do Brasil frente mar, com mais de 290 metros de altura e 84 pavimentos. Oferece uma vista panorâmica inigualável.",
       specs: [
         "4 Suítes | 3 Vagas",
@@ -73,9 +161,29 @@ export const propertiesData = {
   ],
   exclusive: [
     {
+      id: "ena",
       title: "Edifício Ená",
       location: "Praia do Estaleiro | Balneário Camboriú - SC",
       image: imgEna,
+      images: [
+        imgEna,
+        imgEna02,
+        imgEna03,
+        imgEna04,
+        imgEna05,
+        imgEna06,
+        imgEna07,
+        imgEna08,
+        imgEna09,
+        imgEna10,
+        imgEna11,
+        imgEna12,
+        imgEna13,
+        imgEna14,
+        imgEna15,
+        imgEna16,
+        imgEna17
+      ],
       summary: "Apartamento de altíssimo padrão 'pé na areia' com vista mar permanente. Um projeto exclusivo focado em sustentabilidade, tecnologia e conexão direta com a natureza.",
       specs: [
         "4 Suítes | 4 Vagas",
@@ -88,9 +196,11 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "porto-belo-golf",
       title: "Porto Belo Golf Resort",
       location: "Porto Belo | SC",
       image: imgPortoBeloGolf,
+      images: [imgPortoBeloGolf],
       summary: "Lote exclusivo no primeiro condomínio com campo de golfe iluminado do Brasil. A união perfeita entre segurança, alto padrão, contato com a natureza e lazer sem precedentes.",
       specs: [
         "Lote de Alto Padrão",
@@ -103,9 +213,11 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "horizon",
       title: "Cobertura no Edifício Horizon",
       location: "Praia Brava | Itajaí - SC",
-      image: imgBrava, // Placeholder: image for Ref 2415 not found
+      image: imgBrava,
+      images: [imgBrava],
       summary: "Uma cobertura exclusiva que une amplitude, sofisticação e uma área externa incrível na Praia Brava. Oferece conforto e privacidade absoluta.",
       specs: [
         "4 Suítes (1 Master)",
@@ -120,6 +232,7 @@ export const propertiesData = {
   ],
   liquidity: [
     {
+      id: "atlantic-paradise",
       title: "Atlantic Paradise",
       location: "Meia Praia | Itapema - SC",
       image: imgAtlantic,
@@ -136,6 +249,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "namar-phacz",
       title: "Namar Phacz Home",
       location: "Perequê | Porto Belo - SC",
       image: imgNamar,
@@ -153,6 +267,7 @@ export const propertiesData = {
   ],
   ms_properties: [
     {
+      id: "alpha-555",
       title: "Residencial Alphaville 2 - Puro Luxo",
       location: "Residencial Alphaville 2 | Campo Grande - MS",
       image: imgAlpha555,
@@ -162,6 +277,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "alpha-608",
       title: "Casa com 4 Suítes - Alphaville",
       location: "Residencial Alphaville | Campo Grande - MS",
       image: imgAlpha608,
@@ -171,6 +287,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "alpha-724",
       title: "Sobrado Neoclássico",
       location: "Residencial Alphaville 3 | Campo Grande - MS",
       image: imgAlpha724,
@@ -180,6 +297,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "alpha-746",
       title: "Exclusiva Casa Térrea de Esquina",
       location: "Residencial Alphaville 3 | Campo Grande - MS",
       image: imgAlpha746,
@@ -189,6 +307,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-167",
       title: "Sobrado Luxuoso no Damha II",
       location: "Residencial Damha II | Campo Grande - MS",
       image: imgDamha167,
@@ -198,6 +317,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-184",
       title: "Alto Padrão no Damha I",
       location: "Residencial Damha I | Campo Grande - MS",
       image: imgDamha184,
@@ -207,6 +327,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-200",
       title: "Sobrado Contemporâneo",
       location: "Residencial Damha I | Campo Grande - MS",
       image: imgDamha200,
@@ -216,6 +337,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-208",
       title: "Casa Térrea de Esquina",
       location: "Residencial Damha III | Campo Grande - MS",
       image: imgDamha208,
@@ -225,6 +347,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-214",
       title: "Alto Padrão no Damha III",
       location: "Residencial Damha III | Campo Grande - MS",
       image: imgDamha214,
@@ -234,6 +357,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-209",
       title: "Mansão Cinematográfica no Damha I",
       location: "Residencial Damha I | Campo Grande - MS",
       image: imgDamha209,
@@ -243,6 +367,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-213",
       title: "Sobrado de Esquina no Damha II",
       location: "Residencial Damha II | Campo Grande - MS",
       image: imgDamha213,
@@ -252,6 +377,7 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-217",
       title: "Casa de Alto Padrão - Damha II",
       location: "Residencial Damha II | Campo Grande - MS",
       image: imgDamha217,
@@ -261,18 +387,20 @@ export const propertiesData = {
       cta: "Fale com a gente"
     },
     {
+      id: "damha-219",
       title: "Sobrado de Esquina - Damha IV",
       location: "Residencial Damha IV | Campo Grande - MS",
-      image: imgDamha200, // Placeholder
+      image: imgDamha200,
       summary: "Sobrado de alto padrão em lote de esquina no Residencial Damha IV com infraestrutura completa para lazer e trabalho.",
       specs: ["4 Suítes | 2 Vagas", "393 m² Construídos", "Cód. 219"],
       price: "R$ 5.500.000,00",
       cta: "Fale com a gente"
     },
     {
+      id: "damha-218",
       title: "Alto Padrão para Locação - Damha III",
       location: "Residencial Damha III | Campo Grande - MS",
-      image: imgDamha214, // Placeholder
+      image: imgDamha214,
       summary: "Residência de alto padrão semi-mobiliada no Residencial Damha III, oferecendo praticidade e sofisticação para locação.",
       specs: ["4 Dormitórios", "264 m² Construídos", "Cód. 218"],
       price: "R$ 15.000,00 /mês",
@@ -281,12 +409,14 @@ export const propertiesData = {
   ],
   videos: [
     {
+      id: "video-brava",
       title: "Tour Exclusivo: Brava Home Resort",
       location: "Praia Brava | Itajaí",
       thumbnail: imgBrava,
       videoUrl: "/placeholders/video1.mp4"
     },
     {
+      id: "video-yachthouse",
       title: "A Experiência Yachthouse",
       location: "Balneário Camboriú",
       thumbnail: imgYachthouse,
@@ -295,3 +425,16 @@ export const propertiesData = {
   ]
 };
 
+// Helper function to find a property by ID across all categories
+export const getPropertyById = (id: string): Property | null => {
+  if (propertiesData.highlight.id === id) return propertiesData.highlight;
+  
+  const allProperties = [
+    ...propertiesData.icons,
+    ...propertiesData.exclusive,
+    ...propertiesData.liquidity,
+    ...propertiesData.ms_properties
+  ];
+
+  return allProperties.find(p => p.id === id) || null;
+};

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { BackgroundGrid } from '../components/SVGElements';
 import { ChevronRight, CheckCircle2, PlayCircle } from 'lucide-react';
 import { propertiesData } from '../data/properties';
+import { Link } from 'react-router-dom';
 
 export const Portfolio = () => {
   return (
@@ -85,9 +86,9 @@ const CategorySection = ({ title, children }: { title: string, children: React.R
 );
 
 const PropertyCard = ({
-  title, location, image, summary, specs, audience, price, paymentCondition, cta, highlight, tag, videoUrl
+  id, title, location, image, summary, specs, audience, price, paymentCondition, cta, highlight, tag, videoUrl
 }: any) => (
-  <div className={`group flex flex-col ${highlight ? 'lg:col-span-2 lg:flex-row bg-aurea-surface border border-white/5' : 'bg-aurea-surface h-full border border-white/5 flex flex-col'} relative overflow-hidden transition-all duration-500 hover:border-aurea-gold/30 hover:shadow-[0_0_40px_rgba(202,176,131,0.05)]`}>
+  <Link to={`/portfolio/${id}`} className={`group flex flex-col ${highlight ? 'lg:col-span-2 lg:flex-row bg-aurea-surface border border-white/5' : 'bg-aurea-surface h-full border border-white/5 flex flex-col'} relative overflow-hidden transition-all duration-500 hover:border-aurea-gold/30 hover:shadow-[0_0_40px_rgba(202,176,131,0.05)]`}>
 
     <div className={`overflow-hidden bg-aurea-surface relative ${highlight ? 'lg:w-[55%] aspect-square lg:aspect-auto min-h-[500px]' : 'aspect-[4/3] w-full shrink-0'}`}>
       {tag && (
@@ -154,13 +155,13 @@ const PropertyCard = ({
             <span>Ver Vídeo do Imóvel</span>
           </a>
         )}
-        <button className="group/btn w-full inline-flex items-center justify-between bg-white/5 border border-white/10 text-aurea-light px-6 py-5 font-sans uppercase tracking-[0.2em] text-[10px] hover:bg-aurea-gold hover:text-aurea-dark hover:border-aurea-gold transition-all duration-500">
+        <div className="group/btn w-full inline-flex items-center justify-between bg-white/5 border border-white/10 text-aurea-light px-6 py-5 font-sans uppercase tracking-[0.2em] text-[10px] hover:bg-aurea-gold hover:text-aurea-dark hover:border-aurea-gold transition-all duration-500">
           <span>{cta}</span>
           <ChevronRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
-        </button>
+        </div>
       </div>
     </div>
-  </div>
+  </Link>
 );
 
 const VideoCard = ({ title, location, thumbnail, videoUrl }: any) => (
