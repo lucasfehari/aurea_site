@@ -4,7 +4,6 @@ import { BackgroundGrid } from '../components/SVGElements';
 import { ArrowRight, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import aureaGradient from '../assets/SVG/aurea-gradient.svg';
-import imgTataNovo from '../assets/img/LLB_6971.jpg';
 import videobg from '../assets/videos/bg_hero.mp4';
 import imgHome1 from '../assets/imoveis_alphaville_damha/Alto Padrao Neoclassico no Alphaville III - Cod 724.jpeg';
 import imgHome2 from '../assets/imoveis_alphaville_damha/Sonho e Realidade - Cod 167.jpeg';
@@ -73,49 +72,17 @@ export const Home = () => {
 
       {/* Section Expert: Tatá Marques  - AQUI VAI VIR O VIDEO DO TATA QUE VAI FICAR PRONTO SEXTA FEIRA*/}
       <section className="py-32 px-6 md:px-12 max-w-[1600px] mx-auto relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Image Side */}
-          <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/5] w-full max-w-md lg:max-w-xl mx-auto overflow-hidden bg-aurea-surface border border-white/5 group rounded-[1rem] shadow-2xl">
-            <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10 duration-700"></div>
-            <img
-              src={imgTataNovo}
-              alt="Tatá Marques"
-              className="w-full h-full object-cover object-top filter contrast-[1.1] opacity-90 group-hover:scale-105 transition-all duration-1000"
-            />
-            {/* Decorative element */}
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 border-l border-b border-aurea-gold/30 z-0 hidden lg:block"></div>
-            <div className="absolute top-8 right-8 z-20">
-              <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-aurea-gold bg-aurea-dark/90 px-4 py-1.5 backdrop-blur-md border border-aurea-gold/30">Diretoria</span>
-            </div>
-          </div>
-
-          {/* Text Side */}
-          <div className="flex flex-col justify-center">
-            <div className="mb-8 flex items-center gap-4">
-              <span className="w-12 h-[1px] bg-aurea-gold/50"></span>
-              <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-aurea-gold">Assessoria VIP</span>
-            </div>
-            <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl uppercase tracking-tighter mb-8 text-aurea-light leading-[0.9]">
-              Tatá Marques
-            </h2>
-            <div className="w-24 h-[1px] bg-aurea-gold/30 mb-8"></div>
-            <p className="font-sans text-base md:text-lg text-aurea-light/90 mb-8 uppercase tracking-widest leading-relaxed">
-              A <span className="text-aurea-gold font-medium">inteligência por trás</span> das melhores alocações no mercado mais promissor do país.
-            </p>
-            <p className="font-sans text-[11px] md:text-xs text-aurea-light/60 mb-12 uppercase tracking-widest leading-relaxed text-balance">
-              Com networking exclusivo e profundo domínio do ciclo imobiliário catarinense, mapeia as oportunidades de maior liquidez e segurança patrimonial antes mesmo de chegarem ao mercado. A conexão direta e de confiança para investidores institucionais e private.
-            </p>
-
-            <Link to="/contato" className="inline-flex items-center gap-6 group w-fit">
-              <span className="font-sans text-[10px] md:text-xs uppercase tracking-[0.2em] text-aurea-light group-hover:text-aurea-gold transition-colors">
-                Agendar Reunião de Diretoria
-              </span>
-              <div className="w-12 h-12 rounded-full border border-aurea-gold/30 flex items-center justify-center group-hover:bg-aurea-gold transition-all duration-500 bg-white/5">
-                <ArrowRight size={16} className="text-aurea-gold group-hover:text-aurea-dark transform -rotate-45 transition-colors" />
-              </div>
-            </Link>
-          </div>
+        <div className="relative w-full aspect-video overflow-hidden bg-aurea-surface border border-white/5 shadow-2xl rounded-2xl">
+          <iframe
+            src="https://player.vimeo.com/video/1176177376?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;loop=1&amp;autoplay=1&amp;muted=1"
+            className="absolute top-0 left-0 w-full h-full"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title="AUREA_VIDEO"
+          ></iframe>
         </div>
+
       </section>
 
       {/* Section 2: O Diferencial (ABOUT Layout) */}

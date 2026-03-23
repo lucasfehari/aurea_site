@@ -235,7 +235,28 @@ import imgAlpha746_15 from '../assets/imoveis_organizados/campo_grande/imovel_co
 import imgAlpha746_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto16.jpg';
 import imgAlpha746_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto17.jpg';
 import imgAlpha746_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto18.jpg';
+import imgDamha218_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto01.jpg';
+import imgDamha218_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto02.jpg';
+import imgDamha218_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto03.jpg';
+import imgDamha218_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto04.jpg';
+import imgDamha218_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto05.jpg';
+import imgDamha218_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto06.jpg';
+import imgDamha218_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto07.jpg';
+import imgDamha218_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto08.jpg';
+import imgDamha218_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto09.jpg';
+import imgDamha218_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto10.jpg';
+import imgDamha218_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto11.jpg';
+import imgDamha218_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto12.jpg';
+import imgDamha218_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto13.jpg';
+import imgDamha218_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto14.jpg';
+import imgDamha218_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto15.jpg';
+import imgDamha218_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto16.jpg';
+import imgDamha218_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto17.jpg';
+import imgDamha218_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto18.jpg';
+import imgDamha218_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto19.jpg';
+import imgDamha218_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto20.jpg';
 import imgDamha167 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/damha_ii_fachada_01_cod_167.webp';
+import imgAlpha692 from '../assets/imoveis_alphaville_damha/Alphaville I - Sobrado Novo - Cod 692.jpeg';
 import imgDamha167_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto01.jpg';
 import imgDamha167_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto02.jpg';
 import imgDamha167_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto03.jpg';
@@ -1190,10 +1211,43 @@ export const propertiesData: PropertiesData = {
       id: "damha-218",
       title: "Alto Padrão para Locação - Damha III",
       location: "Residencial Damha III | Campo Grande - MS",
-      image: imgDamha214,
+      image: imgDamha218_01,
+      images: [
+        imgDamha218_01,
+        imgDamha218_02,
+        imgDamha218_03,
+        imgDamha218_04,
+        imgDamha218_05,
+        imgDamha218_06,
+        imgDamha218_07,
+        imgDamha218_08,
+        imgDamha218_09,
+        imgDamha218_10,
+        imgDamha218_11,
+        imgDamha218_12,
+        imgDamha218_13,
+        imgDamha218_14,
+        imgDamha218_15,
+        imgDamha218_16,
+        imgDamha218_17,
+        imgDamha218_18,
+        imgDamha218_19,
+        imgDamha218_20
+      ],
       summary: "Residência de alto padrão semi-mobiliada no Residencial Damha III, oferecendo praticidade e sofisticação para locação.",
       specs: ["4 Dormitórios", "264 m² Construídos", "Cód. 218"],
       price: "R$ 15.000,00 /mês",
+      cta: "Fale com a gente"
+    },
+    {
+      id: "alpha-692",
+      title: "Alphaville I - Sobrado Novo",
+      location: "Residencial Alphaville I | Campo Grande - MS",
+      image: imgAlpha692,
+      images: [imgAlpha692],
+      summary: "Sobrado novo de alto padrão no Residencial Alphaville I. Projeto moderno com acabamentos premium e integração total.",
+      specs: ["Padrão Alphaville", "Construção Nova", "Cód. 692"],
+      price: "Valor sob consulta",
       cta: "Fale com a gente"
     }
   ],

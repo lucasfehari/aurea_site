@@ -4,9 +4,9 @@ import { BackgroundGrid } from '../components/SVGElements';
 import { ArrowRight, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import imgRevista from '../assets/img/LLB_6971.jpg';
-import imgNews1 from '../assets/img/news_coastline_1773424069387.png';
-import imgNews2 from '../assets/img/news_architecture_1773424086740.png';
-import imgNews3 from '../assets/img/news_regions_1773424103735.png';
+import imgNews1 from '../assets/img/noticia_revista/desenvolvimento_.png';
+import imgNews2 from '../assets/img/noticia_revista/da_gigante_havan.png';
+import imgNews3 from '../assets/img/noticia_revista/slaviero.png';
 
 export const Magazine = () => {
   return (
@@ -32,7 +32,7 @@ export const Magazine = () => {
               <Link to="/contato" className="inline-flex items-center justify-center gap-3 bg-aurea-gold text-aurea-dark px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-aurea-light transition-colors">
                 Entre em Contato <ArrowRight size={16} />
               </Link>
-              <a href="https://drive.google.com/file/d/1UfR3jHhVZt_UoOC_ALahOFIJbwO-wjGS/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-aurea-light px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">
+              <a href="https://drive.google.com/file/d/1-ul5pHqGKYLi34nhDE0Zlm3tQHxgLhqK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-aurea-light px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">
                 <BookOpen size={16} />
                 Clique aqui para baixar
               </a>
@@ -66,18 +66,18 @@ export const Magazine = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              title: "A contínua valorização do litoral catarinense",
-              desc: "Os fatores consolidados que impulsionam a demanda por imóveis de luxo e a segurança do investimento a longo prazo.",
+              title: "Desenvolvimento, investimentos e visão de futuro",
+              desc: "Reinaldo Azambuja fala sobre legado político, crescimento econômico e os caminhos para o Mato Grosso do Sul.",
               img: imgNews1
             },
             {
-              title: "Tendências em Arquitetura de Alto Padrão",
-              desc: "Como o design moderno e a integração com a natureza estão redefinindo os lançamentos mais cobiçados da região.",
+              title: "Da Gigante Havan ao Mercado Imobiliário",
+              desc: "A estratégia, os resultados e a ousadia de Jordan Hang, CEO da JH Marketing, no mercado de alto padrão.",
               img: imgNews2
             },
             {
-              title: "A Ascensão de Novas Regiões e Oportunidades",
-              desc: "Além de Balneário Camboriú, praias vizinhas começam a despontar como as novas apostas do mercado imobiliário premium.",
+              title: "Slaviero Prime Campo Grande",
+              desc: "Tradição, inovação e requinte no novo ícone da hotelaria em Campo Grande, MS.",
               img: imgNews3
             }
           ].map((item, idx) => (
@@ -89,9 +89,14 @@ export const Magazine = () => {
                 <span className="font-sans text-[10px] uppercase tracking-widest text-aurea-gold/80 mb-4 block">Análise de Mercado</span>
                 <h3 className="font-serif text-2xl text-aurea-light mb-4">{item.title}</h3>
                 <p className="font-sans text-sm text-aurea-light/70 leading-relaxed mb-6">{item.desc}</p>
-                <button className="text-aurea-gold hover:text-aurea-light font-sans text-xs uppercase tracking-widest flex items-center gap-2 transition-colors">
+                <a 
+                  href="https://drive.google.com/file/d/1-ul5pHqGKYLi34nhDE0Zlm3tQHxgLhqK/view?usp=sharing" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-aurea-gold hover:text-aurea-light font-sans text-xs uppercase tracking-widest flex items-center gap-2 transition-colors"
+                >
                   Ler Matéria <ArrowRight size={14} />
-                </button>
+                </a>
               </div>
             </div>
           ))}
