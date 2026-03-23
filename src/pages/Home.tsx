@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 import aureaGradient from '../assets/SVG/aurea-gradient.svg';
 import videobg from '../assets/videos/bg_hero.mp4';
 import imgHome1 from '../assets/imoveis_alphaville_damha/Alto Padrao Neoclassico no Alphaville III - Cod 724.jpeg';
-import imgHome2 from '../assets/imoveis_alphaville_damha/Sonho e Realidade - Cod 167.jpeg';
-import imgHome3 from '../assets/imoveis_alphaville_damha/Alto padrao no Damha I - Cod 184.jpeg';
-import imgHome4 from '../assets/imoveis_alphaville_damha/Residencial Alphaville 2 - Cod 555.jpeg';
-import imgHome5 from '../assets/imoveis_alphaville_damha/Alphaville III - Exclusiva Casa Terrea de Esquina - Cod 746.jpeg';
+import imgYachthouse from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yachthouse_fachada_01_ref_1989.webp';
+import imgEna from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_fachada_01_ref_2251.webp';
+import imgBrava from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_home_resort_piscina_privativa_01_ref_2363.webp';
+import imgOneTower from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/one_tower_fachada_01_ref_1026.webp';
 
 export const Home = () => {
   return (
@@ -200,7 +200,7 @@ export const Home = () => {
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10"></div>
               <img
-                src={imgHome2}
+                src={imgYachthouse}
                 alt="Yachthouse"
                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
@@ -213,7 +213,7 @@ export const Home = () => {
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10"></div>
               <img
-                src={imgHome3}
+                src={imgEna}
                 alt="Ená Praia do Estaleiro"
                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
@@ -250,7 +250,7 @@ export const Home = () => {
             </div>
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <img
-                src={imgHome4}
+                src={imgBrava}
                 alt="Brava Home Resort"
                 className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
@@ -263,7 +263,7 @@ export const Home = () => {
             <div className="aspect-[4/3] w-full overflow-hidden relative">
               <div className="absolute inset-0 bg-aurea-dark/20 group-hover:bg-transparent transition-all z-10"></div>
               <img
-                src={imgHome5}
+                src={imgOneTower}
                 alt="One Tower"
                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 referrerPolicy="no-referrer"
