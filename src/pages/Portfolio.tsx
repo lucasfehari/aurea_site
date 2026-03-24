@@ -63,12 +63,7 @@ export const Portfolio = () => {
         ))}
       </CategorySection>
 
-      {/* Categoria: Vídeos */}
-      <CategorySection title="Apresentações em Vídeo">
-        {propertiesData.videos.map((video, idx) => (
-          <VideoCard key={idx} {...video} />
-        ))}
-      </CategorySection>
+
     </div>
   );
 };
