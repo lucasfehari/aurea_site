@@ -32,7 +32,7 @@ export const Magazine = () => {
               <Link to="/contato" className="inline-flex items-center justify-center gap-3 bg-aurea-gold text-aurea-dark px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-aurea-light transition-colors">
                 Entre em Contato <ArrowRight size={16} />
               </Link>
-              <a href="https://drive.google.com/file/d/1-ul5pHqGKYLi34nhDE0Zlm3tQHxgLhqK/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-aurea-light px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">
+              <a href="https://drive.google.com/file/d/14raTkayjJZS7h504gpm4iIbzGOylg6gW/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-aurea-light px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">
                 <BookOpen size={16} />
                 Clique aqui para baixar
               </a>
@@ -90,7 +90,7 @@ export const Magazine = () => {
                 <h3 className="font-serif text-2xl text-aurea-light mb-4">{item.title}</h3>
                 <p className="font-sans text-sm text-aurea-light/70 leading-relaxed mb-6">{item.desc}</p>
                 <a 
-                  href="https://drive.google.com/file/d/1-ul5pHqGKYLi34nhDE0Zlm3tQHxgLhqK/view?usp=sharing" 
+                  href="https://drive.google.com/file/d/14raTkayjJZS7h504gpm4iIbzGOylg6gW/view?usp=sharing" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-aurea-gold hover:text-aurea-light font-sans text-xs uppercase tracking-widest flex items-center gap-2 transition-colors"

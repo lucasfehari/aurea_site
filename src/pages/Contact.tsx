@@ -59,7 +59,7 @@ export const Contact = () => {
             <div className="space-y-8 flex-grow">
               <div>
                 <p className="font-sans text-sm tracking-widest uppercase text-aurea-light/50 mb-2">Contato Comercial Exclusivo</p>
-                <p className="font-serif text-2xl text-aurea-light">Tatá Marques</p>
+                <p className="font-serif text-2xl text-aurea-light">Aurea Real State</p>
                 <p className="font-sans text-xs text-aurea-light/40 mt-1">CRECI SC 11ª Região — 73872 F | CRECI MS 14ª Região — 17501 F</p>
               </div>
 
@@ -72,11 +72,11 @@ export const Contact = () => {
                   </div>
                   (67) 99101-0303
                 </a>
-                <a href="https://www.instagram.com/tatapovo?igsh=MWtpdXVhcjg1bm5mcw%3D%3D" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-aurea-light/80 hover:text-aurea-gold transition-colors font-sans">
+                <a href="https://www.instagram.com/aurearevista" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-aurea-light/80 hover:text-aurea-gold transition-colors font-sans">
                   <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center">
                     <Instagram size={16} />
                   </div>
-                  @tatapovo
+                  @aurearevista
                 </a>
               </div>
             </div>

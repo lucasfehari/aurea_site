@@ -92,7 +92,7 @@ export const Layout = () => {
             <h3 className="font-serif text-xl mb-6">Diretoria</h3>
             <ul className="space-y-4 font-sans text-sm text-aurea-light/80">
               <li>
-                <strong className="block text-aurea-light">Tatá Marques</strong>
+                <strong className="block text-aurea-light">Aurea Real State</strong>
                 Comercial<br />
                 <span className="text-xs opacity-60">CRECI SC 11ª Reg. 73872 F<br />CRECI MS 14ª Reg. 17501 F</span>
               </li>
@@ -111,7 +111,7 @@ export const Layout = () => {
               ))}
             </ul>
             <div className="flex gap-4 mt-8">
-              <a href="https://www.instagram.com/tatapovo?igsh=MWtpdXVhcjg1bm5mcw%3D%3D" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-aurea-gold hover:text-aurea-gold transition-all">
+              <a href="https://www.instagram.com/aurearevista" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-aurea-gold hover:text-aurea-gold transition-all">
                 <Instagram size={18} />
               </a>
               <a href="https://wa.me/5567991010303" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-aurea-gold hover:text-aurea-gold transition-all">
