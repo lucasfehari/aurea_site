@@ -1,11 +1,66 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { BackgroundGrid } from '../components/SVGElements';
-import { ChevronRight, CheckCircle2, PlayCircle } from 'lucide-react';
-import { propertiesData } from '../data/properties';
+import { ChevronRight, CheckCircle2, PlayCircle, ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Portfolio = () => {
+  const [data, setData] = useState<any>({
+    highlight: null,
+    icons: [],
+    exclusive: [],
+    liquidity: [],
+    ms_properties: []
+  });
+  const [allProperties, setAllProperties] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  
+  // Paginação do Acervo Completo
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 8;
+
+  useEffect(() => {
+    fetch('/api/properties')
+      .then(res => res.json())
+      .then(properties => {
+        setAllProperties(properties);
+        const grouped = {
+          highlight: properties.find((p: any) => p.category === 'highlight'),
+          icons: properties.filter((p: any) => p.category === 'icons'),
+          exclusive: properties.filter((p: any) => p.category === 'exclusive'),
+          liquidity: properties.filter((p: any) => p.category === 'liquidity'),
+          ms_properties: properties.filter((p: any) => p.category === 'ms_properties')
+        };
+        setData(grouped);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Erro ao carregar imóveis:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="w-full h-screen bg-aurea-dark text-aurea-gold flex items-center justify-center font-serif text-2xl uppercase tracking-widest">
+        Carregando Portfólio...
+      </div>
+    );
+  }
+
+  const totalPages = Math.ceil(allProperties.length / itemsPerPage);
+  const currentProperties = allProperties.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) setCurrentPage(currentPage - 1);
+    document.getElementById('acervo-completo')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) setCurrentPage(currentPage + 1);
+    document.getElementById('acervo-completo')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="w-full pt-32 pb-20 bg-aurea-dark text-aurea-light min-h-screen">
       <BackgroundGrid />
@@ -31,39 +86,85 @@ export const Portfolio = () => {
       </section>
 
       {/* Categoria: Highlight / Joia da Coroa */}
-      <section className="px-6 md:px-12 max-w-[1600px] mx-auto mb-32 relative z-10">
-        <PropertyCard {...propertiesData.highlight} />
-      </section>
+      {data.highlight && (
+        <section className="px-6 md:px-12 max-w-[1600px] mx-auto mb-32 relative z-10">
+          <PropertyCard {...data.highlight} />
+        </section>
+      )}
 
       {/* Categoria: Símbolos de Status & Arquitetura */}
-      <CategorySection title="Ícones do Litoral Catarinense">
-        {propertiesData.icons.map((prop, idx) => (
-          <PropertyCard key={idx} {...prop} />
-        ))}
-      </CategorySection>
+      {data.icons.length > 0 && (
+        <CategorySection title="Ícones do Litoral Catarinense">
+          {data.icons.map((prop: any, idx: number) => (
+            <PropertyCard key={idx} {...prop} />
+          ))}
+        </CategorySection>
+      )}
 
       {/* Categoria: Ultra Exclusividade & Natureza */}
-      <CategorySection title="Ultra Exclusividade & Conservação">
-        {propertiesData.exclusive.map((prop, idx) => (
-          <PropertyCard key={idx} {...prop} />
-        ))}
-      </CategorySection>
+      {data.exclusive.length > 0 && (
+        <CategorySection title="Ultra Exclusividade & Conservação">
+          {data.exclusive.map((prop: any, idx: number) => (
+            <PropertyCard key={idx} {...prop} />
+          ))}
+        </CategorySection>
+      )}
 
       {/* Categoria: Alta Liquidez & Lançamentos Estratégicos */}
-      <CategorySection title="Alta Liquidez & Novos Ciclos">
-        {propertiesData.liquidity.map((prop, idx) => (
-          <PropertyCard key={idx} {...prop} />
-        ))}
-      </CategorySection>
+      {data.liquidity.length > 0 && (
+        <CategorySection title="Alta Liquidez & Novos Ciclos">
+          {data.liquidity.map((prop: any, idx: number) => (
+            <PropertyCard key={idx} {...prop} />
+          ))}
+        </CategorySection>
+      )}
 
       {/* Categoria: MS - Damha e Alphaville */}
-      <CategorySection title="Seleção MS - Alphaville & Damha">
-        {propertiesData.ms_properties.map((prop, idx) => (
-          <PropertyCard key={idx} {...prop} />
-        ))}
-      </CategorySection>
+      {data.ms_properties.length > 0 && (
+        <CategorySection title="Seleção MS - Alphaville & Damha">
+          {data.ms_properties.map((prop: any, idx: number) => (
+            <PropertyCard key={idx} {...prop} />
+          ))}
+        </CategorySection>
+      )}
 
+      {/* Acervo Completo - Paginação */}
+      <section id="acervo-completo" className="px-6 md:px-12 max-w-[1600px] mx-auto mb-32 relative z-10 pt-20 border-t border-white/5">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-16">
+          <h2 className="font-serif text-3xl md:text-5xl text-aurea-gold tracking-tighter uppercase leading-none">Acervo Completo</h2>
+          <div className="h-[1px] flex-grow bg-aurea-gold/20 w-full md:w-auto mt-4 md:mt-0"></div>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+          {currentProperties.map((prop: any, idx: number) => (
+            <PropertyCard key={idx} {...prop} />
+          ))}
+        </div>
 
+        {totalPages > 1 && (
+          <div className="flex flex-col md:flex-row items-center justify-between border-t border-white/10 pt-8 mt-12 gap-6">
+            <div className="font-sans text-[10px] uppercase tracking-[0.2em] text-aurea-light/50">
+              Página {currentPage} de {totalPages}
+            </div>
+            <div className="flex items-center gap-4">
+              <button 
+                onClick={handlePrevPage}
+                disabled={currentPage === 1}
+                className={`flex items-center gap-2 border border-aurea-gold/30 px-6 py-3 font-sans text-[10px] uppercase tracking-widest transition-all duration-300 ${currentPage === 1 ? 'opacity-30 cursor-not-allowed' : 'text-aurea-gold hover:bg-aurea-gold hover:text-aurea-dark hover:border-aurea-gold'}`}
+              >
+                <ChevronLeft size={14} /> Anterior
+              </button>
+              <button 
+                onClick={handleNextPage}
+                disabled={currentPage === totalPages}
+                className={`flex items-center gap-2 border border-aurea-gold/30 px-6 py-3 font-sans text-[10px] uppercase tracking-widest transition-all duration-300 ${currentPage === totalPages ? 'opacity-30 cursor-not-allowed' : 'text-aurea-gold hover:bg-aurea-gold hover:text-aurea-dark hover:border-aurea-gold'}`}
+              >
+                Próxima <ChevronRight size={14} />
+              </button>
+            </div>
+          </div>
+        )}
+      </section>
     </div>
   );
 };
@@ -81,9 +182,13 @@ const CategorySection = ({ title, children }: { title: string, children: React.R
 );
 
 const PropertyCard = ({
-  id, title, location, image, summary, specs, audience, price, paymentCondition, cta, highlight, tag, videoUrl
-}: any) => (
-  <Link to={`/portfolio/${id}`} className={`group flex flex-col ${highlight ? 'lg:col-span-2 lg:flex-row bg-aurea-surface border border-white/5' : 'bg-aurea-surface h-full border border-white/5 flex flex-col'} relative overflow-hidden transition-all duration-500 hover:border-aurea-gold/30 hover:shadow-[0_0_40px_rgba(202,176,131,0.05)]`}>
+  id, code, title, location, image, summary, specs, audience, price, paymentCondition, cta, highlight, tag, videoUrl
+}: any) => {
+  const parsedSpecs = typeof specs === 'string' ? JSON.parse(specs || '[]') : (specs || []);
+  const propId = code || id;
+  
+  return (
+  <Link to={`/portfolio/${propId}`} className={`group flex flex-col ${highlight ? 'lg:col-span-2 lg:flex-row bg-aurea-surface border border-white/5' : 'bg-aurea-surface h-full border border-white/5 flex flex-col'} relative overflow-hidden transition-all duration-500 hover:border-aurea-gold/30 hover:shadow-[0_0_40px_rgba(202,176,131,0.05)]`}>
 
     <div className={`overflow-hidden bg-aurea-surface relative ${highlight ? 'lg:w-[55%] aspect-square lg:aspect-auto min-h-[500px]' : 'aspect-[4/3] w-full shrink-0'}`}>
       {tag && (
@@ -117,12 +222,19 @@ const PropertyCard = ({
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4 mb-10 shrink-0">
-        {specs && specs.map((spec: string, index: number) => (
+        {parsedSpecs.slice(0, 4).map((spec: string, index: number) => (
           <div key={index} className="flex items-center gap-3">
             <CheckCircle2 size={12} className="text-aurea-gold/70 shrink-0" />
             <span className="font-sans text-[10px] lg:text-[11px] uppercase tracking-widest text-aurea-light/90">{spec}</span>
           </div>
         ))}
+        {parsedSpecs.length > 4 && (
+          <div className="flex items-center gap-3 sm:col-span-2 mt-1">
+            <span className="font-sans text-[10px] lg:text-[11px] uppercase tracking-widest text-aurea-gold/80 italic hover:text-aurea-gold transition-colors">
+              + {parsedSpecs.length - 4} especificações (ver mais detalhes do imóvel)
+            </span>
+          </div>
+        )}
       </div>
 
       <div className="space-y-6 mb-10 pt-8 border-t border-white/5 flex-grow">
@@ -157,7 +269,8 @@ const PropertyCard = ({
       </div>
     </div>
   </Link>
-);
+  );
+};
 
 const VideoCard = ({ title, location, thumbnail, videoUrl }: any) => (
   <div className="group flex flex-col bg-aurea-surface border border-white/5 hover:border-aurea-gold/30 transition-all duration-500 overflow-hidden">

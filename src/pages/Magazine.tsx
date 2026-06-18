@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { BackgroundGrid } from '../components/SVGElements';
 import { ArrowRight, BookOpen } from 'lucide-react';
@@ -9,6 +9,15 @@ import imgNews2 from '../assets/img/noticia_revista/da_gigante_havan.png';
 import imgNews3 from '../assets/img/noticia_revista/slaviero.png';
 
 export const Magazine = () => {
+  const [settings, setSettings] = useState<any>({});
+
+  useEffect(() => {
+    fetch('/api/settings')
+      .then(res => res.json())
+      .then(data => setSettings(data))
+      .catch(err => console.error("Erro ao buscar configs da revista:", err));
+  }, []);
+
   return (
     <div className="w-full pt-32 pb-20 min-h-screen">
       <BackgroundGrid />
@@ -28,14 +37,25 @@ export const Magazine = () => {
             <p className="font-sans text-aurea-light/80 text-lg leading-relaxed mb-8">
               Acompanhe as principais informações, tendências e atualizações exclusivas do mercado imobiliário de alto padrão. O seu portal de inteligência para decisões seguras.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contato" className="inline-flex items-center justify-center gap-3 bg-aurea-gold text-aurea-dark px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-aurea-light transition-colors">
-                Entre em Contato <ArrowRight size={16} />
-              </Link>
-              <a href="https://drive.google.com/file/d/14raTkayjJZS7h504gpm4iIbzGOylg6gW/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-aurea-light px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-white/10 transition-colors">
-                <BookOpen size={16} />
-                Clique aqui para baixar
-              </a>
+            <div className="flex flex-col gap-4">
+              {settings.magazine_old_link && (
+                <a href={settings.magazine_old_link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-aurea-light px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-white/10 transition-colors w-fit">
+                  <BookOpen size={16} />
+                  {settings.magazine_old_text || 'Revista Antiga'}
+                </a>
+              )}
+              {settings.magazine_new_link && (
+                <a href={settings.magazine_new_link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-aurea-gold text-aurea-dark px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-aurea-light transition-colors w-fit">
+                  <BookOpen size={16} />
+                  {settings.magazine_new_text || 'Revista Nova'}
+                </a>
+              )}
+              {(!settings.magazine_old_link && !settings.magazine_new_link) && (
+                 <a href="https://drive.google.com/file/d/14raTkayjJZS7h504gpm4iIbzGOylg6gW/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-aurea-gold text-aurea-dark px-8 py-4 rounded-full font-sans font-medium uppercase tracking-widest text-sm hover:bg-aurea-light transition-colors w-fit">
+                   <BookOpen size={16} />
+                   Clique aqui para baixar
+                 </a>
+              )}
             </div>
           </motion.div>
 
@@ -90,8 +110,8 @@ export const Magazine = () => {
                 <h3 className="font-serif text-2xl text-aurea-light mb-4">{item.title}</h3>
                 <p className="font-sans text-sm text-aurea-light/70 leading-relaxed mb-6">{item.desc}</p>
                 <a 
-                  href="https://drive.google.com/file/d/14raTkayjJZS7h504gpm4iIbzGOylg6gW/view?usp=sharing" 
-                  target="_blank" 
+                  href={settings.magazine_new_link || settings.magazine_old_link || "#"} 
+                  target={settings.magazine_new_link || settings.magazine_old_link ? "_blank" : "_self"} 
                   rel="noopener noreferrer" 
                   className="text-aurea-gold hover:text-aurea-light font-sans text-xs uppercase tracking-widest flex items-center gap-2 transition-colors"
                 >

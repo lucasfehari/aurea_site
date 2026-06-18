@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Permite o upload correto das imagens
+  RewriteCond %{REQUEST_URI} ^/uploads/ [NC]
+  RewriteRule ^ - [L]
+
+  # 2. Rotas da API (Tudo que começar com /api/ vai para backend/api.php)
+  # O [QSA] garante que as querystrings (?id=1) sejam repassadas
+  RewriteRule ^api/(.*)$ backend/api.php [QSA,L]
+
+  # 3. Rotas do React (Se não for um arquivo ou diretório existente, serve o index.html)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.html [QSA,L]
+</IfModule>

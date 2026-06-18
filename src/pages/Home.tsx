@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { BackgroundGrid } from '../components/SVGElements';
 import { ArrowRight, ChevronRight, CheckCircle2 } from 'lucide-react';
@@ -6,12 +6,36 @@ import { Link } from 'react-router-dom';
 import aureaGradient from '../assets/SVG/aurea-gradient.svg';
 import videobg from '../assets/videos/bg_hero.mp4';
 import imgHome1 from '../assets/imoveis_alphaville_damha/Alto Padrao Neoclassico no Alphaville III - Cod 724.jpeg';
-import imgYachthouse from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yachthouse_fachada_01_ref_1989.webp';
-import imgEna from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_fachada_01_ref_2251.webp';
-import imgBrava from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_home_resort_piscina_privativa_01_ref_2363.webp';
-import imgOneTower from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/one_tower_fachada_01_ref_1026.webp';
+const imgYachthouse = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yachthouse_fachada_01_ref_1989.webp';
+const imgEna = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_fachada_01_ref_2251.webp';
+const imgBrava = '/imoveis_organizados/itajai/imovel_ref_2363/brava_home_resort_piscina_privativa_01_ref_2363.webp';
+const imgOneTower = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/one_tower_fachada_01_ref_1026.webp';
 
 export const Home = () => {
+  const [featuredProp, setFeaturedProp] = useState<any>(null);
+  const [featuredVideoUrl, setFeaturedVideoUrl] = useState<string>('');
+
+  useEffect(() => {
+    const loadFeatured = async () => {
+      try {
+        const setRes = await fetch('/api/settings');
+        const settings = await setRes.json();
+        if (settings && settings.featured_property_id) {
+          setFeaturedVideoUrl(settings.featured_video_url || '');
+          const propRes = await fetch('/api/properties');
+          const properties = await propRes.json();
+          const prop = properties.find((p: any) => p.id == settings.featured_property_id);
+          if (prop) {
+            setFeaturedProp(prop);
+          }
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    };
+    loadFeatured();
+  }, []);
+
   return (
     <div className="w-full bg-aurea-dark text-aurea-light min-h-scree ">
       {/* Hero Section */}
@@ -84,6 +108,86 @@ export const Home = () => {
         </div>
 
       </section>
+
+      {/* Seção: Imóvel em Destaque Dinâmico */}
+      {featuredProp && (
+        <section className="py-24 px-6 md:px-12 max-w-[1600px] mx-auto relative border-t border-white/5">
+          <div className="mb-12 text-center">
+            <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-aurea-gold border border-aurea-gold/30 px-4 py-1.5 rounded-full inline-block mb-6">
+              Imóvel em Destaque
+            </span>
+            <h2 className="font-serif text-4xl md:text-6xl text-aurea-light uppercase tracking-tighter mb-4">
+              {featuredProp.title}
+            </h2>
+            <p className="font-sans text-aurea-light/70 uppercase tracking-widest max-w-2xl mx-auto">
+              {featuredProp.location} • {featuredProp.price}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            {/* Carousel Area */}
+            <div className="w-full flex flex-col gap-4">
+              <div className="w-full h-[400px] md:h-[600px] overflow-hidden rounded-2xl relative group bg-aurea-surface border border-white/10 shadow-2xl">
+                <div className="flex w-full h-full overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                  {(featuredProp.images && featuredProp.images.length > 0 ? featuredProp.images : (featuredProp.image ? [featuredProp.image] : [])).map((imgUrl: string, idx: number) => (
+                    <div key={idx} className="w-full h-full flex-shrink-0 snap-center relative">
+                      <img src={imgUrl} alt={`Destaque ${idx}`} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    </div>
+                  ))}
+                </div>
+                {/* Indicator that it's a carousel (Optional text/icon) */}
+                <div className="absolute top-4 right-4 bg-black/60 backdrop-blur text-white text-[10px] uppercase tracking-widest px-3 py-1 rounded-full border border-white/10 pointer-events-none">
+                  Deslize para ver mais
+                </div>
+              </div>
+            </div>
+
+            {/* Video Area */}
+            <div className="w-full h-full min-h-[400px] md:min-h-[600px] flex flex-col rounded-2xl overflow-hidden relative bg-aurea-surface border border-white/10 shadow-2xl">
+              {featuredVideoUrl ? (
+                featuredVideoUrl.includes('vimeo.com') || featuredVideoUrl.includes('youtube.com') || featuredVideoUrl.includes('youtu.be') ? (
+                  <iframe
+                    src={
+                      featuredVideoUrl.includes('vimeo.com')
+                        ? featuredVideoUrl.replace('vimeo.com/', 'player.vimeo.com/video/')
+                        : featuredVideoUrl.includes('youtube.com') 
+                          ? featuredVideoUrl.replace('watch?v=', 'embed/') 
+                          : featuredVideoUrl.replace('youtu.be/', 'www.youtube.com/embed/')
+                    }
+                    className="w-full h-full flex-grow absolute inset-0"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                ) : (
+                  <video src={featuredVideoUrl} className="w-full h-full object-cover absolute inset-0" controls preload="metadata"></video>
+                )
+              ) : (
+                <div className="flex-grow p-8 md:p-12 flex flex-col justify-center bg-aurea-dark/50 z-10 absolute inset-0">
+                   <h3 className="text-2xl font-serif text-aurea-gold mb-6 uppercase tracking-widest">Sobre o Imóvel</h3>
+                   <p className="text-aurea-light/80 text-sm md:text-base leading-relaxed mb-8 line-clamp-6">{featuredProp.summary}</p>
+                   {featuredProp.specs && featuredProp.specs.length > 0 && (
+                     <div className="grid grid-cols-2 gap-4 mt-auto">
+                       {featuredProp.specs.slice(0,6).map((spec: string, idx: number) => (
+                         <div key={idx} className="flex items-center gap-2 text-[10px] md:text-xs uppercase tracking-widest text-aurea-light/90">
+                           <CheckCircle2 size={14} className="text-aurea-gold" /> {spec}
+                         </div>
+                       ))}
+                     </div>
+                   )}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link to={`/portfolio/${featuredProp.id}`} className="inline-flex items-center gap-4 bg-aurea-gold text-aurea-dark px-10 py-5 font-sans text-xs uppercase tracking-[0.2em] font-medium hover:bg-aurea-light transition-all rounded-full shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">
+              Ver mais detalhes
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* Section 2: O Diferencial (ABOUT Layout) */}
       <section className="py-32 px-6 md:px-12 max-w-[1600px] mx-auto border-t border-white/5 relative">

@@ -1,451 +1,522 @@
-import imgBrava from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_home_resort_piscina_privativa_01_ref_2363.webp';
-import imgBrava02 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_02.png';
-import imgBrava03 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_03.jpeg';
-import imgBrava04 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_04.jpeg';
-import imgBrava05 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_05.jpeg';
-import imgBrava06 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_06.jpeg';
-import imgBrava07 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_07.jpeg';
-import imgBrava08 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_08.jpeg';
-import imgBrava09 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_09.jpeg';
-import imgBrava10 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_10.jpeg';
-import imgBrava11 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_11.jpeg';
-import imgBrava12 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_12.png';
-import imgBrava13 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_13.jpeg';
-import imgBrava14 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_14.jpeg';
-import imgBrava15 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_15.jpeg';
-import imgBrava16 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_16.jpeg';
-import imgBrava17 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_17.jpeg';
-import imgBrava18 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava-18.jpeg';
-import imgBrava19 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_19.jpeg';
-import imgBrava20 from '../assets/imoveis_organizados/itajai/imovel_ref_2363/brava_20.jpeg';
-import imgYachthouse from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yachthouse_fachada_01_ref_1989.webp';
-import imgYachthouse02 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach02.jpeg';
-import imgYachthouse03 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach03.jpeg';
-import imgYachthouse04 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach04.jpeg';
-import imgYachthouse05 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach05.jpeg';
-import imgYachthouse06 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach06.jpeg';
-import imgYachthouse07 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach07.jpeg';
-import imgYachthouse08 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach08.jpeg';
-import imgYachthouse09 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach09.jpeg';
-import imgYachthouse10 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach10.jpeg';
-import imgYachthouse11 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach11.jpeg';
-import imgYachthouse12 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach12.jpeg';
-import imgYachthouse13 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach13.jpeg';
-import imgYachthouse14 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach14.jpeg';
-import imgYachthouse15 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach15.jpeg';
-import imgYachthouseLazer from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yachthouse_lazer_01_ref_1989.webp';
-import imgOneTower from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/one_tower_fachada_01_ref_1026.webp';
-import imgOneTower01 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto01.jpg';
-import imgOneTower02 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto02.jpg';
-import imgOneTower03 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto03.jpg';
-import imgOneTower04 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto04.jpg';
-import imgOneTower05 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto05.jpg';
-import imgOneTower06 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto06.jpg';
-import imgOneTower07 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto07.jpg';
-import imgOneTower08 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto08.jpg';
-import imgOneTower09 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto09.jpg';
-import imgOneTower10 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto10.jpg';
-import imgOneTower11 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto11.jpg';
-import imgOneTower12 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto12.jpg';
-import imgOneTower13 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto13.jpg';
-import imgOneTower14 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto14.jpg';
-import imgOneTower15 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto15.jpg';
-import imgOneTower16 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto16.jpg';
-import imgOneTower17 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto17.jpg';
-import imgOneTower18 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto18.jpg';
-import imgOneTower19 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto19.jpg';
-import imgOneTower20 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto20.jpg';
-import imgOneTower21 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto21.jpg';
-import imgOneTower22 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto22.jpg';
-import imgEna from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_fachada_01_ref_2251.webp';
-import imgEna02 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_02.jpg';
-import imgEna03 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_03.jpg';
-import imgEna04 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_04.jpg';
-import imgEna05 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_05.jpg';
-import imgEna06 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_06.jpg';
-import imgEna07 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_07.jpg';
-import imgEna08 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_08.jpg';
-import imgEna09 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_09.jpg';
-import imgEna10 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_10.jpg';
-import imgEna11 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_11.jpg';
-import imgEna12 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_12.jpg';
-import imgEna13 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_13.jpg';
-import imgEna14 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_14.jpg';
-import imgEna15 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_15.jpg';
-import imgEna16 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_16.jpg';
-import imgEna17 from '../assets/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_17.jpg';
-import imgPortoBeloGolf from '../assets/imoveis_organizados/porto_belo/imovel_ref_2339/porto_belo_golf_vista_aerea_01_ref_2339.webp';
-import imgPortoBelo01 from '../assets/imoveis_organizados/porto_belo/imovel_ref_2339/refimovel_foto01 (1).jpg';
-import imgPortoBelo02 from '../assets/imoveis_organizados/porto_belo/imovel_ref_2339/refimovel_foto02 (1).jpg';
-import imgPortoBelo03 from '../assets/imoveis_organizados/porto_belo/imovel_ref_2339/refimovel_foto03 (1).jpg';
-import imgAtlantic from '../assets/imoveis_organizados/itapema/imovel_ref_2283/atlantic_paradise_interior_01_ref_2283.webp';
-import imgAtlantic01 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto01.jpg';
-import imgAtlantic02 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto02.jpg';
-import imgAtlantic03 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto03.jpg';
-import imgAtlantic04 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto04.jpg';
-import imgAtlantic05 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto05.jpg';
-import imgAtlantic06 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto06.jpg';
-import imgAtlantic07 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto07.jpg';
-import imgAtlantic08 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto08.jpg';
-import imgAtlantic09 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto09.jpg';
-import imgAtlantic10 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto10.jpg';
-import imgAtlantic11 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto11.jpg';
-import imgAtlantic12 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto12.jpg';
-import imgAtlantic13 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto13.jpg';
-import imgAtlantic14 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto14.jpg';
-import imgAtlantic15 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto15.jpg';
-import imgAtlantic16 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto16.jpg';
-import imgAtlantic17 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto17.jpg';
-import imgAtlantic18 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto18.jpg';
-import imgAtlantic19 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto19.jpg';
-import imgAtlantic20 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto20.jpg';
-import imgAtlantic21 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto21.jpg';
-import imgAtlantic22 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto22.jpg';
-import imgAtlantic23 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto23.jpg';
-import imgAtlantic24 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto24.jpg';
-import imgAtlantic25 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto25.jpg';
-import imgAtlantic26 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto26.jpg';
-import imgAtlantic27 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto27.jpg';
-import imgAtlantic28 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto28.jpg';
-import imgAtlantic29 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto29.jpg';
-import imgAtlantic30 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto30.jpg';
-import imgAtlantic31 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto31.jpg';
-import imgAtlantic32 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto32.jpg';
-import imgAtlantic33 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto33.jpg';
-import imgAtlantic34 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto34.jpg';
-import imgAtlantic35 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto35.jpg';
-import imgAtlantic36 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto36.jpg';
-import imgAtlantic37 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto37.jpg';
-import imgAtlantic38 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto38.jpg';
-import imgAtlantic39 from '../assets/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto39.jpg';
-import imgNamar from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/namar_phacz_home_fachada_01.webp';
-import imgNamarAcademia from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-academia.jpg';
-import imgNamarBrinquedoteca from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-brinquedoteca.jpg';
-import imgNamarCoworking from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-coworking.jpg';
-import imgNamarFachada1 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-1.jpg';
-import imgNamarFachada2 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-2.jpg';
-import imgNamarFachada3 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-3.jpg';
-import imgNamarFachada4 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-4.jpg';
-import imgNamarFachada9 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-9.jpg';
-import imgNamarFachada16 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-16.jpg';
-import imgNamarFachada18 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-18.jpg';
-import imgNamarGameroom from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-gameroom.jpg';
-import imgNamarGourmet from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-gourmet-torre-mar.jpg';
-import imgNamarGrabGo from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-grabandgo.jpg';
-import imgNamarHidro from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-hidromassagem.jpg';
-import imgNamarLivingDuplex from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-living-duplex.jpg';
-import imgNamarLivingTipo1 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-living-integrado-tipo1.jpg';
-import imgNamarMassagem from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-massagem.jpg';
-import imgNamarPilates from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-pilates.jpg';
-import imgNamarPiscina3 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-piscina-3.jpg';
-import imgNamarPiscinaDuplex2 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-piscina-duplex-2.jpg';
-import imgNamarPlantaMezanino from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-planta-mezanino.jpg';
-import imgNamarPlantaTerreo from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-planta-terreo.jpg';
-import imgNamarSauna from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-sauna.jpg';
-import imgNamarSolarium from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-solarium.jpg';
-import imgNamarSpaPiscina from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-spa-piscina.jpg';
-import imgNamarSuiteDuplex2 from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-suite-duplex-2.jpg';
-import imgNamarYoga from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-yoga.jpg';
-import imgNamarParallax from '../assets/imoveis_organizados/porto_belo/namar_phacz_home/namar-horizonte-piscina-parallax.jpg';
+const imgBrava = '/imoveis_organizados/itajai/imovel_ref_2363/brava_home_resort_piscina_privativa_01_ref_2363.webp';
+const imgBrava02 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_02.png';
+const imgBrava03 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_03.jpeg';
+const imgBrava04 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_04.jpeg';
+const imgBrava05 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_05.jpeg';
+const imgBrava06 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_06.jpeg';
+const imgBrava07 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_07.jpeg';
+const imgBrava08 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_08.jpeg';
+const imgBrava09 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_09.jpeg';
+const imgBrava10 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_10.jpeg';
+const imgBrava11 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_11.jpeg';
+const imgBrava12 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_12.png';
+const imgBrava13 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_13.jpeg';
+const imgBrava14 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_14.jpeg';
+const imgBrava15 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_15.jpeg';
+const imgBrava16 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_16.jpeg';
+const imgBrava17 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_17.jpeg';
+const imgBrava18 = '/imoveis_organizados/itajai/imovel_ref_2363/brava-18.jpeg';
+const imgBrava19 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_19.jpeg';
+const imgBrava20 = '/imoveis_organizados/itajai/imovel_ref_2363/brava_20.jpeg';
+const imgYachthouse = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yachthouse_fachada_01_ref_1989.webp';
+const imgYachthouse02 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach02.jpeg';
+const imgYachthouse03 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach03.jpeg';
+const imgYachthouse04 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach04.jpeg';
+const imgYachthouse05 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach05.jpeg';
+const imgYachthouse06 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach06.jpeg';
+const imgYachthouse07 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach07.jpeg';
+const imgYachthouse08 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach08.jpeg';
+const imgYachthouse09 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach09.jpeg';
+const imgYachthouse10 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach10.jpeg';
+const imgYachthouse11 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach11.jpeg';
+const imgYachthouse12 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach12.jpeg';
+const imgYachthouse13 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach13.jpeg';
+const imgYachthouse14 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach14.jpeg';
+const imgYachthouse15 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yach15.jpeg';
+const imgYachthouseLazer = '/imoveis_organizados/balneario_camboriu/imovel_ref_1989/yachthouse_lazer_01_ref_1989.webp';
+const imgOneTower = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/one_tower_fachada_01_ref_1026.webp';
+const imgOneTower01 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto01.jpg';
+const imgOneTower02 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto02.jpg';
+const imgOneTower03 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto03.jpg';
+const imgOneTower04 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto04.jpg';
+const imgOneTower05 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto05.jpg';
+const imgOneTower06 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto06.jpg';
+const imgOneTower07 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto07.jpg';
+const imgOneTower08 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto08.jpg';
+const imgOneTower09 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto09.jpg';
+const imgOneTower10 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto10.jpg';
+const imgOneTower11 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto11.jpg';
+const imgOneTower12 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto12.jpg';
+const imgOneTower13 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto13.jpg';
+const imgOneTower14 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto14.jpg';
+const imgOneTower15 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto15.jpg';
+const imgOneTower16 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto16.jpg';
+const imgOneTower17 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto17.jpg';
+const imgOneTower18 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto18.jpg';
+const imgOneTower19 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto19.jpg';
+const imgOneTower20 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto20.jpg';
+const imgOneTower21 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto21.jpg';
+const imgOneTower22 = '/imoveis_organizados/balneario_camboriu/imovel_ref_1026/refimovel_foto22.jpg';
+const imgEna = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_fachada_01_ref_2251.webp';
+const imgEna02 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_02.jpg';
+const imgEna03 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_03.jpg';
+const imgEna04 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_04.jpg';
+const imgEna05 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_05.jpg';
+const imgEna06 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_06.jpg';
+const imgEna07 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_07.jpg';
+const imgEna08 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_08.jpg';
+const imgEna09 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_09.jpg';
+const imgEna10 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_10.jpg';
+const imgEna11 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_11.jpg';
+const imgEna12 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_12.jpg';
+const imgEna13 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_13.jpg';
+const imgEna14 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_14.jpg';
+const imgEna15 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_15.jpg';
+const imgEna16 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_16.jpg';
+const imgEna17 = '/imoveis_organizados/balneario_camboriu/imovel_ref_2251/ena_17.jpg';
+const imgPortoBeloGolf = '/imoveis_organizados/porto_belo/imovel_ref_2339/porto_belo_golf_vista_aerea_01_ref_2339.webp';
+const imgPortoBelo01 = '/imoveis_organizados/porto_belo/imovel_ref_2339/refimovel_foto01 (1).jpg';
+const imgPortoBelo02 = '/imoveis_organizados/porto_belo/imovel_ref_2339/refimovel_foto02 (1).jpg';
+const imgPortoBelo03 = '/imoveis_organizados/porto_belo/imovel_ref_2339/refimovel_foto03 (1).jpg';
+const imgAtlantic = '/imoveis_organizados/itapema/imovel_ref_2283/atlantic_paradise_interior_01_ref_2283.webp';
+const imgAtlantic01 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto01.jpg';
+const imgAtlantic02 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto02.jpg';
+const imgAtlantic03 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto03.jpg';
+const imgAtlantic04 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto04.jpg';
+const imgAtlantic05 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto05.jpg';
+const imgAtlantic06 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto06.jpg';
+const imgAtlantic07 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto07.jpg';
+const imgAtlantic08 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto08.jpg';
+const imgAtlantic09 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto09.jpg';
+const imgAtlantic10 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto10.jpg';
+const imgAtlantic11 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto11.jpg';
+const imgAtlantic12 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto12.jpg';
+const imgAtlantic13 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto13.jpg';
+const imgAtlantic14 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto14.jpg';
+const imgAtlantic15 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto15.jpg';
+const imgAtlantic16 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto16.jpg';
+const imgAtlantic17 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto17.jpg';
+const imgAtlantic18 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto18.jpg';
+const imgAtlantic19 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto19.jpg';
+const imgAtlantic20 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto20.jpg';
+const imgAtlantic21 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto21.jpg';
+const imgAtlantic22 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto22.jpg';
+const imgAtlantic23 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto23.jpg';
+const imgAtlantic24 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto24.jpg';
+const imgAtlantic25 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto25.jpg';
+const imgAtlantic26 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto26.jpg';
+const imgAtlantic27 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto27.jpg';
+const imgAtlantic28 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto28.jpg';
+const imgAtlantic29 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto29.jpg';
+const imgAtlantic30 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto30.jpg';
+const imgAtlantic31 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto31.jpg';
+const imgAtlantic32 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto32.jpg';
+const imgAtlantic33 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto33.jpg';
+const imgAtlantic34 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto34.jpg';
+const imgAtlantic35 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto35.jpg';
+const imgAtlantic36 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto36.jpg';
+const imgAtlantic37 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto37.jpg';
+const imgAtlantic38 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto38.jpg';
+const imgAtlantic39 = '/imoveis_organizados/itapema/imovel_ref_2283/ref2283_Edifício_Atlantic_Paradise_foto39.jpg';
+const imgNamar = '/imoveis_organizados/porto_belo/namar_phacz_home/namar_phacz_home_fachada_01.webp';
+const imgNamarAcademia = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-academia.jpg';
+const imgNamarBrinquedoteca = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-brinquedoteca.jpg';
+const imgNamarCoworking = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-coworking.jpg';
+const imgNamarFachada1 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-1.jpg';
+const imgNamarFachada2 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-2.jpg';
+const imgNamarFachada3 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-3.jpg';
+const imgNamarFachada4 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-4.jpg';
+const imgNamarFachada9 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-9.jpg';
+const imgNamarFachada16 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-16.jpg';
+const imgNamarFachada18 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-fachada-18.jpg';
+const imgNamarGameroom = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-gameroom.jpg';
+const imgNamarGourmet = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-gourmet-torre-mar.jpg';
+const imgNamarGrabGo = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-grabandgo.jpg';
+const imgNamarHidro = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-hidromassagem.jpg';
+const imgNamarLivingDuplex = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-living-duplex.jpg';
+const imgNamarLivingTipo1 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-living-integrado-tipo1.jpg';
+const imgNamarMassagem = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-massagem.jpg';
+const imgNamarPilates = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-pilates.jpg';
+const imgNamarPiscina3 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-piscina-3.jpg';
+const imgNamarPiscinaDuplex2 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-piscina-duplex-2.jpg';
+const imgNamarPlantaMezanino = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-planta-mezanino.jpg';
+const imgNamarPlantaTerreo = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-planta-terreo.jpg';
+const imgNamarSauna = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-sauna.jpg';
+const imgNamarSolarium = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-solarium.jpg';
+const imgNamarSpaPiscina = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-spa-piscina.jpg';
+const imgNamarSuiteDuplex2 = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-suite-duplex-2.jpg';
+const imgNamarYoga = '/imoveis_organizados/porto_belo/namar_phacz_home/lg-namar-yoga.jpg';
+const imgNamarParallax = '/imoveis_organizados/porto_belo/namar_phacz_home/namar-horizonte-piscina-parallax.jpg';
 
 // Campo Grande - MS
-import imgAlpha555 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/alphaville_2_fachada_01_cod_555.webp';
-import imgAlpha555_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto01.jpg';
-import imgAlpha555_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto02.jpg';
-import imgAlpha555_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto03.jpg';
-import imgAlpha555_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto04.jpg';
-import imgAlpha555_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto05.jpg';
-import imgAlpha555_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto06.jpg';
-import imgAlpha555_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto07.jpg';
-import imgAlpha555_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto08.jpg';
-import imgAlpha555_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto09.jpg';
-import imgAlpha555_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto10.jpg';
-import imgAlpha555_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto11.jpg';
-import imgAlpha555_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto12.jpg';
-import imgAlpha555_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto13.jpg';
-import imgAlpha555_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto14.jpg';
-import imgAlpha555_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto15.jpg';
-import imgAlpha555_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto16.jpg';
-import imgAlpha555_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto17.jpg';
-import imgAlpha555_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto18.jpg';
-import imgAlpha608 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/alphaville_fachada_01_cod_608.webp';
-import imgAlpha608_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto01.jpg';
-import imgAlpha608_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto02.jpg';
-import imgAlpha608_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto03.jpg';
-import imgAlpha608_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto04.jpg';
-import imgAlpha608_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto05.jpg';
-import imgAlpha608_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto06.jpg';
-import imgAlpha608_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto07.jpg';
-import imgAlpha608_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto08.jpg';
-import imgAlpha608_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto09.jpg';
-import imgAlpha608_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto10.jpg';
-import imgAlpha608_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto11.jpg';
-import imgAlpha608_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto12.jpg';
-import imgAlpha608_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto13.jpg';
-import imgAlpha608_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto14.jpg';
-import imgAlpha608_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto15.jpg';
-import imgAlpha608_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto16.jpg';
-import imgAlpha608_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto17.jpg';
-import imgAlpha608_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto18.jpg';
-import imgAlpha608_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto19.jpg';
-import imgAlpha608_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto20.jpg';
-import imgAlpha724 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/alphaville_3_fachada_01_cod_724.webp';
-import imgAlpha724_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto01.jpg';
-import imgAlpha724_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto02.jpg';
-import imgAlpha724_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto03.jpg';
-import imgAlpha724_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto04.jpg';
-import imgAlpha724_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto05.jpg';
-import imgAlpha724_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto06.jpg';
-import imgAlpha724_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto07.jpg';
-import imgAlpha724_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto08.jpg';
-import imgAlpha724_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto09.jpg';
-import imgAlpha724_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto10.jpg';
-import imgAlpha724_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto11.jpg';
-import imgAlpha724_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto12.jpg';
-import imgAlpha724_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto13.jpg';
-import imgAlpha724_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto14.jpg';
-import imgAlpha724_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto15.jpg';
-import imgAlpha724_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto16.jpg';
-import imgAlpha724_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto17.jpg';
-import imgAlpha724_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto18.jpg';
-import imgAlpha724_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto19.jpg';
-import imgAlpha724_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto20.jpg';
-import imgAlpha724_21 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto21.jpg';
-import imgAlpha724_22 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto22.jpg';
-import imgAlpha724_23 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto23.jpg';
-import imgAlpha724_24 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto24.jpg';
-import imgAlpha724_25 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto25.jpg';
-import imgAlpha724_26 from '../assets/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto26.jpg';
-import imgAlpha746 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/alphaville_3_fachada_01_cod_746.webp';
-import imgAlpha746_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto01.jpg';
-import imgAlpha746_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto02.jpg';
-import imgAlpha746_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto03.jpg';
-import imgAlpha746_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto04.jpg';
-import imgAlpha746_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto05.jpg';
-import imgAlpha746_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto06.jpg';
-import imgAlpha746_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto07.jpg';
-import imgAlpha746_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto08.jpg';
-import imgAlpha746_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto09.jpg';
-import imgAlpha746_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto10.jpg';
-import imgAlpha746_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto11.jpg';
-import imgAlpha746_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto12.jpg';
-import imgAlpha746_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto13.jpg';
-import imgAlpha746_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto14.jpg';
-import imgAlpha746_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto15.jpg';
-import imgAlpha746_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto16.jpg';
-import imgAlpha746_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto17.jpg';
-import imgAlpha746_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto18.jpg';
-import imgDamha218_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto01.jpg';
-import imgDamha218_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto02.jpg';
-import imgDamha218_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto03.jpg';
-import imgDamha218_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto04.jpg';
-import imgDamha218_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto05.jpg';
-import imgDamha218_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto06.jpg';
-import imgDamha218_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto07.jpg';
-import imgDamha218_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto08.jpg';
-import imgDamha218_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto09.jpg';
-import imgDamha218_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto10.jpg';
-import imgDamha218_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto11.jpg';
-import imgDamha218_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto12.jpg';
-import imgDamha218_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto13.jpg';
-import imgDamha218_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto14.jpg';
-import imgDamha218_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto15.jpg';
-import imgDamha218_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto16.jpg';
-import imgDamha218_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto17.jpg';
-import imgDamha218_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto18.jpg';
-import imgDamha218_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto19.jpg';
-import imgDamha218_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto20.jpg';
-import imgDamha167 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/damha_ii_fachada_01_cod_167.webp';
+const imgAlpha555 = '/imoveis_organizados/campo_grande/imovel_cod_555/alphaville_2_fachada_01_cod_555.webp';
+const imgAlpha555_01 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto01.jpg';
+const imgAlpha555_02 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto02.jpg';
+const imgAlpha555_03 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto03.jpg';
+const imgAlpha555_04 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto04.jpg';
+const imgAlpha555_05 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto05.jpg';
+const imgAlpha555_06 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto06.jpg';
+const imgAlpha555_07 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto07.jpg';
+const imgAlpha555_08 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto08.jpg';
+const imgAlpha555_09 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto09.jpg';
+const imgAlpha555_10 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto10.jpg';
+const imgAlpha555_11 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto11.jpg';
+const imgAlpha555_12 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto12.jpg';
+const imgAlpha555_13 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto13.jpg';
+const imgAlpha555_14 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto14.jpg';
+const imgAlpha555_15 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto15.jpg';
+const imgAlpha555_16 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto16.jpg';
+const imgAlpha555_17 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto17.jpg';
+const imgAlpha555_18 = '/imoveis_organizados/campo_grande/imovel_cod_555/ref99125_Residencial_Alphaville_2_foto18.jpg';
+const imgAlpha608 = '/imoveis_organizados/campo_grande/imovel_cod_608/alphaville_fachada_01_cod_608.webp';
+const imgAlpha608_01 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto01.jpg';
+const imgAlpha608_02 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto02.jpg';
+const imgAlpha608_03 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto03.jpg';
+const imgAlpha608_04 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto04.jpg';
+const imgAlpha608_05 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto05.jpg';
+const imgAlpha608_06 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto06.jpg';
+const imgAlpha608_07 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto07.jpg';
+const imgAlpha608_08 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto08.jpg';
+const imgAlpha608_09 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto09.jpg';
+const imgAlpha608_10 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto10.jpg';
+const imgAlpha608_11 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto11.jpg';
+const imgAlpha608_12 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto12.jpg';
+const imgAlpha608_13 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto13.jpg';
+const imgAlpha608_14 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto14.jpg';
+const imgAlpha608_15 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto15.jpg';
+const imgAlpha608_16 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto16.jpg';
+const imgAlpha608_17 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto17.jpg';
+const imgAlpha608_18 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto18.jpg';
+const imgAlpha608_19 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto19.jpg';
+const imgAlpha608_20 = '/imoveis_organizados/campo_grande/imovel_cod_608/ref99125_Casa_Com_4_suítes_foto20.jpg';
+const imgAlpha724 = '/imoveis_organizados/campo_grande/imovel_cod_724/alphaville_3_fachada_01_cod_724.webp';
+const imgAlpha724_01 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto01.jpg';
+const imgAlpha724_02 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto02.jpg';
+const imgAlpha724_03 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto03.jpg';
+const imgAlpha724_04 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto04.jpg';
+const imgAlpha724_05 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto05.jpg';
+const imgAlpha724_06 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto06.jpg';
+const imgAlpha724_07 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto07.jpg';
+const imgAlpha724_08 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto08.jpg';
+const imgAlpha724_09 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto09.jpg';
+const imgAlpha724_10 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto10.jpg';
+const imgAlpha724_11 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto11.jpg';
+const imgAlpha724_12 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto12.jpg';
+const imgAlpha724_13 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto13.jpg';
+const imgAlpha724_14 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto14.jpg';
+const imgAlpha724_15 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto15.jpg';
+const imgAlpha724_16 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto16.jpg';
+const imgAlpha724_17 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto17.jpg';
+const imgAlpha724_18 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto18.jpg';
+const imgAlpha724_19 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto19.jpg';
+const imgAlpha724_20 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto20.jpg';
+const imgAlpha724_21 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto21.jpg';
+const imgAlpha724_22 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto22.jpg';
+const imgAlpha724_23 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto23.jpg';
+const imgAlpha724_24 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto24.jpg';
+const imgAlpha724_25 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto25.jpg';
+const imgAlpha724_26 = '/imoveis_organizados/campo_grande/imovel_cod_724/ref99125_Alto_Padrão_Neoclássico_no_Alphaville_III_foto26.jpg';
+const imgAlpha746 = '/imoveis_organizados/campo_grande/imovel_cod_746/alphaville_3_fachada_01_cod_746.webp';
+const imgAlpha746_01 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto01.jpg';
+const imgAlpha746_02 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto02.jpg';
+const imgAlpha746_03 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto03.jpg';
+const imgAlpha746_04 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto04.jpg';
+const imgAlpha746_05 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto05.jpg';
+const imgAlpha746_06 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto06.jpg';
+const imgAlpha746_07 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto07.jpg';
+const imgAlpha746_08 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto08.jpg';
+const imgAlpha746_09 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto09.jpg';
+const imgAlpha746_10 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto10.jpg';
+const imgAlpha746_11 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto11.jpg';
+const imgAlpha746_12 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto12.jpg';
+const imgAlpha746_13 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto13.jpg';
+const imgAlpha746_14 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto14.jpg';
+const imgAlpha746_15 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto15.jpg';
+const imgAlpha746_16 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto16.jpg';
+const imgAlpha746_17 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto17.jpg';
+const imgAlpha746_18 = '/imoveis_organizados/campo_grande/imovel_cod_746/ref99125_Alphaville_III_Exclusiva_Casa_Térrea_de_Esquina_foto18.jpg';
+const imgDamha218_01 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto01.jpg';
+const imgDamha218_02 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto02.jpg';
+const imgDamha218_03 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto03.jpg';
+const imgDamha218_04 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto04.jpg';
+const imgDamha218_05 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto05.jpg';
+const imgDamha218_06 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto06.jpg';
+const imgDamha218_07 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto07.jpg';
+const imgDamha218_08 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto08.jpg';
+const imgDamha218_09 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto09.jpg';
+const imgDamha218_10 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto10.jpg';
+const imgDamha218_11 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto11.jpg';
+const imgDamha218_12 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto12.jpg';
+const imgDamha218_13 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto13.jpg';
+const imgDamha218_14 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto14.jpg';
+const imgDamha218_15 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto15.jpg';
+const imgDamha218_16 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto16.jpg';
+const imgDamha218_17 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto17.jpg';
+const imgDamha218_18 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto18.jpg';
+const imgDamha218_19 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto19.jpg';
+const imgDamha218_20 = '/imoveis_organizados/campo_grande/imovel_cod_218/ref99125_Alto_Padrão_Damha_3_SemiMobiliado_foto20.jpg';
+const imgDamha167 = '/imoveis_organizados/campo_grande/imovel_cod_167/damha_ii_fachada_01_cod_167.webp';
 import imgAlpha692 from '../assets/imoveis_alphaville_damha/Alphaville I - Sobrado Novo - Cod 692.jpeg';
-import imgDamha167_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto01.jpg';
-import imgDamha167_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto02.jpg';
-import imgDamha167_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto03.jpg';
-import imgDamha167_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto04.jpg';
-import imgDamha167_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto05.jpg';
-import imgDamha167_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto06.jpg';
-import imgDamha167_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto07.jpg';
-import imgDamha167_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto08.jpg';
-import imgDamha167_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto09.jpg';
-import imgDamha167_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto10.jpg';
-import imgDamha167_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto11.jpg';
-import imgDamha167_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto12.jpg';
-import imgDamha167_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto13.jpg';
-import imgDamha167_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto14.jpg';
-import imgDamha167_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto15.jpg';
-import imgDamha167_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto16.jpg';
-import imgDamha167_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto17.jpg';
-import imgDamha167_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto18.jpg';
-import imgDamha184 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/damha_i_interior_01_cod_184.webp';
-import imgDamha184_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto01.jpg';
-import imgDamha184_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto02.jpg';
-import imgDamha184_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto03.jpg';
-import imgDamha184_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto04.jpg';
-import imgDamha184_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto05.jpg';
-import imgDamha184_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto06.jpg';
-import imgDamha184_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto07.jpg';
-import imgDamha184_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto08.jpg';
-import imgDamha184_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto09.jpg';
-import imgDamha184_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto10.jpg';
-import imgDamha184_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto11.jpg';
-import imgDamha184_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto12.jpg';
-import imgDamha184_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto13.jpg';
-import imgDamha184_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto14.jpg';
-import imgDamha184_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto15.jpg';
-import imgDamha184_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto16.jpg';
-import imgDamha184_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto17.jpg';
-import imgDamha184_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto18.jpg';
-import imgDamha184_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto19.jpg';
-import imgDamha184_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto20.jpg';
-import imgDamha184_21 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto21.jpg';
-import imgDamha184_22 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto22.jpg';
-import imgDamha184_23 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto23.jpg';
-import imgDamha184_24 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto24.jpg';
-import imgDamha184_25 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto25.jpg';
-import imgDamha184_26 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto26.jpg';
-import imgDamha184_27 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto27.jpg';
-import imgDamha184_28 from '../assets/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto28.jpg';
-import imgDamha200 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/damha_i_fachada_01_cod_200.webp';
-import imgDamha200_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto01.jpg';
-import imgDamha200_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto02.jpg';
-import imgDamha200_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto03.jpg';
-import imgDamha200_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto04.jpg';
-import imgDamha200_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto05.jpg';
-import imgDamha200_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto06.jpg';
-import imgDamha200_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto07.jpg';
-import imgDamha200_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto08.jpg';
-import imgDamha200_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto09.jpg';
-import imgDamha200_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto10.jpg';
-import imgDamha200_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto11.jpg';
-import imgDamha200_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto12.jpg';
-import imgDamha200_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto13.jpg';
-import imgDamha200_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto14.jpg';
-import imgDamha200_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto15.jpg';
-import imgDamha200_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto16.jpg';
-import imgDamha200_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto17.jpg';
-import imgDamha200_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto18.jpg';
-import imgDamha208 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/damha_iii_fachada_01_cod_208.webp';
-import imgDamha208_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto01.jpg';
-import imgDamha208_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto02.jpg';
-import imgDamha208_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto03.jpg';
-import imgDamha208_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto04.jpg';
-import imgDamha208_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto05.jpg';
-import imgDamha208_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto06.jpg';
-import imgDamha208_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto07.jpg';
-import imgDamha208_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto08.jpg';
-import imgDamha208_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto09.jpg';
-import imgDamha208_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto10.jpg';
-import imgDamha208_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto11.jpg';
-import imgDamha208_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto12.jpg';
-import imgDamha208_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto13.jpg';
-import imgDamha208_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto14.jpg';
-import imgDamha208_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto15.jpg';
-import imgDamha208_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto16.jpg';
-import imgDamha208_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto17.jpg';
-import imgDamha208_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto18.jpg';
-import imgDamha208_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto19.jpg';
-import imgDamha208_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto20.jpg';
-import imgDamha208_21 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto21.jpg';
-import imgDamha208_22 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto22.jpg';
-import imgDamha208_23 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto23.jpg';
-import imgDamha208_24 from '../assets/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto24.jpg';
-import imgDamha214 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/damha_iii_fachada_01_cod_214.webp';
-import imgDamha214_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto01.jpg';
-import imgDamha214_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto02.jpg';
-import imgDamha214_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto03.jpg';
-import imgDamha214_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto04.jpg';
-import imgDamha214_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto05.jpg';
-import imgDamha214_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto06.jpg';
-import imgDamha214_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto07.jpg';
-import imgDamha214_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto08.jpg';
-import imgDamha214_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto09.jpg';
-import imgDamha214_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto10.jpg';
-import imgDamha214_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto11.jpg';
-import imgDamha214_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto12.jpg';
-import imgDamha214_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto13.jpg';
-import imgDamha214_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto14.jpg';
-import imgDamha214_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto15.jpg';
-import imgDamha214_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto16.jpg';
-import imgDamha214_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto17.jpg';
-import imgDamha214_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto18.jpg';
-import imgDamha214_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto19.jpg';
-import imgDamha214_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto20.jpg';
-import imgDamha214_21 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto21.jpg';
-import imgDamha214_22 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto22.jpg';
-import imgDamha214_23 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto23.jpg';
-import imgDamha214_24 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto24.jpg';
-import imgDamha214_25 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto25.jpg';
-import imgDamha214_26 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto26.jpg';
-import imgDamha214_27 from '../assets/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto27.jpg';
-import imgDamha209 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/damha_i_mansao_01_cod_209.webp';
-import imgDamha209_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto01.jpg';
-import imgDamha209_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto02.jpg';
-import imgDamha209_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto03.jpg';
-import imgDamha209_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto04.jpg';
-import imgDamha209_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto05.jpg';
-import imgDamha209_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto06.jpg';
-import imgDamha209_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto07.jpg';
-import imgDamha209_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto08.jpg';
-import imgDamha209_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto20.jpg';
-import imgDamha209_22 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto22.jpg';
-import imgDamha209_23 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto23.jpg';
-import imgDamha209_25 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto25.jpg';
-import imgDamha209_26 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto26.jpg';
-import imgDamha209_27 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto27.jpg';
-import imgDamha209_28 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto28.jpg';
-import imgDamha209_29 from '../assets/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto29.jpg';
-import imgDamha213 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/damha_ii_fachada_01_cod_213.webp';
-import imgDamha213_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto01.png';
-import imgDamha213_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto02.jpg';
-import imgDamha213_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto03.jpg';
-import imgDamha213_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto04.jpg';
-import imgDamha213_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto05.jpg';
-import imgDamha213_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto06.jpg';
-import imgDamha213_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto07.jpg';
-import imgDamha213_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto08.jpg';
-import imgDamha213_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto09.jpg';
-import imgDamha213_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto10.jpg';
-import imgDamha213_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto11.jpg';
-import imgDamha213_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto12.jpg';
-import imgDamha213_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto13.jpg';
-import imgDamha213_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto14.jpg';
-import imgDamha213_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto15.jpg';
-import imgDamha213_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto16.jpg';
-import imgDamha213_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto17.jpg';
-import imgDamha213_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto18.jpg';
-import imgDamha213_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto19.jpg';
-import imgDamha213_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto20.jpg';
-import imgDamha213_21 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto21.jpg';
-import imgDamha213_22 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto22.jpg';
-import imgDamha213_23 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto23.jpg';
-import imgDamha213_24 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto24.jpg';
-import imgDamha213_25 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto25.jpg';
-import imgDamha213_26 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto26.jpg';
-import imgDamha213_27 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto27.jpg';
-import imgDamha213_28 from '../assets/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto28.jpg';
-import imgDamha217 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/damha_ii_fachada_01_cod_217.webp';
-import imgDamha217_01 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto01.jpg';
-import imgDamha217_02 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto02.jpg';
-import imgDamha217_03 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto03.jpg';
-import imgDamha217_04 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto04.jpg';
-import imgDamha217_05 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto05.jpg';
-import imgDamha217_06 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto06.jpg';
-import imgDamha217_07 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto07.jpg';
-import imgDamha217_08 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto08.jpg';
-import imgDamha217_09 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto09.jpg';
-import imgDamha217_10 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto10.jpg';
-import imgDamha217_11 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto11.jpg';
-import imgDamha217_12 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto12.jpg';
-import imgDamha217_13 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto13.jpg';
-import imgDamha217_14 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto14.jpg';
-import imgDamha217_15 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto15.jpg';
-import imgDamha217_16 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto16.jpg';
-import imgDamha217_17 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto17.jpg';
-import imgDamha217_18 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto18.jpg';
-import imgDamha217_19 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto19.jpg';
-import imgDamha217_20 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto20.jpg';
-import imgDamha217_21 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto21.jpg';
-import imgDamha217_22 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto22.jpg';
-import imgDamha217_23 from '../assets/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto23.jpg';
+const imgDamha167_01 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto01.jpg';
+const imgDamha167_02 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto02.jpg';
+const imgDamha167_03 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto03.jpg';
+const imgDamha167_04 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto04.jpg';
+const imgDamha167_05 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto05.jpg';
+const imgDamha167_06 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto06.jpg';
+const imgDamha167_07 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto07.jpg';
+const imgDamha167_08 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto08.jpg';
+const imgDamha167_09 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto09.jpg';
+const imgDamha167_10 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto10.jpg';
+const imgDamha167_11 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto11.jpg';
+const imgDamha167_12 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto12.jpg';
+const imgDamha167_13 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto13.jpg';
+const imgDamha167_14 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto14.jpg';
+const imgDamha167_15 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto15.jpg';
+const imgDamha167_16 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto16.jpg';
+const imgDamha167_17 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto17.jpg';
+const imgDamha167_18 = '/imoveis_organizados/campo_grande/imovel_cod_167/ref99125_Sonho_e_Realidade_foto18.jpg';
+const imgDamha184 = '/imoveis_organizados/campo_grande/imovel_cod_184/damha_i_interior_01_cod_184.webp';
+const imgDamha184_01 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto01.jpg';
+const imgDamha184_02 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto02.jpg';
+const imgDamha184_03 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto03.jpg';
+const imgDamha184_04 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto04.jpg';
+const imgDamha184_05 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto05.jpg';
+const imgDamha184_06 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto06.jpg';
+const imgDamha184_07 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto07.jpg';
+const imgDamha184_08 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto08.jpg';
+const imgDamha184_09 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto09.jpg';
+const imgDamha184_10 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto10.jpg';
+const imgDamha184_11 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto11.jpg';
+const imgDamha184_12 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto12.jpg';
+const imgDamha184_13 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto13.jpg';
+const imgDamha184_14 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto14.jpg';
+const imgDamha184_15 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto15.jpg';
+const imgDamha184_16 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto16.jpg';
+const imgDamha184_17 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto17.jpg';
+const imgDamha184_18 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto18.jpg';
+const imgDamha184_19 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto19.jpg';
+const imgDamha184_20 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto20.jpg';
+const imgDamha184_21 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto21.jpg';
+const imgDamha184_22 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto22.jpg';
+const imgDamha184_23 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto23.jpg';
+const imgDamha184_24 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto24.jpg';
+const imgDamha184_25 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto25.jpg';
+const imgDamha184_26 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto26.jpg';
+const imgDamha184_27 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto27.jpg';
+const imgDamha184_28 = '/imoveis_organizados/campo_grande/imovel_cod_184/ref99125_Alto_padrão_no_Damha_I_6_suítes_e_lazer_completo_foto28.jpg';
+const imgDamha200 = '/imoveis_organizados/campo_grande/imovel_cod_200/damha_i_fachada_01_cod_200.webp';
+const imgDamha200_01 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto01.jpg';
+const imgDamha200_02 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto02.jpg';
+const imgDamha200_03 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto03.jpg';
+const imgDamha200_04 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto04.jpg';
+const imgDamha200_05 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto05.jpg';
+const imgDamha200_06 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto06.jpg';
+const imgDamha200_07 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto07.jpg';
+const imgDamha200_08 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto08.jpg';
+const imgDamha200_09 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto09.jpg';
+const imgDamha200_10 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto10.jpg';
+const imgDamha200_11 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto11.jpg';
+const imgDamha200_12 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto12.jpg';
+const imgDamha200_13 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto13.jpg';
+const imgDamha200_14 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto14.jpg';
+const imgDamha200_15 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto15.jpg';
+const imgDamha200_16 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto16.jpg';
+const imgDamha200_17 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto17.jpg';
+const imgDamha200_18 = '/imoveis_organizados/campo_grande/imovel_cod_200/ref99125_Alto_padrão_Damha_I_5_Suítes_foto18.jpg';
+const imgDamha208 = '/imoveis_organizados/campo_grande/imovel_cod_208/damha_iii_fachada_01_cod_208.webp';
+const imgDamha208_01 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto01.jpg';
+const imgDamha208_02 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto02.jpg';
+const imgDamha208_03 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto03.jpg';
+const imgDamha208_04 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto04.jpg';
+const imgDamha208_05 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto05.jpg';
+const imgDamha208_06 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto06.jpg';
+const imgDamha208_07 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto07.jpg';
+const imgDamha208_08 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto08.jpg';
+const imgDamha208_09 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto09.jpg';
+const imgDamha208_10 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto10.jpg';
+const imgDamha208_11 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto11.jpg';
+const imgDamha208_12 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto12.jpg';
+const imgDamha208_13 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto13.jpg';
+const imgDamha208_14 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto14.jpg';
+const imgDamha208_15 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto15.jpg';
+const imgDamha208_16 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto16.jpg';
+const imgDamha208_17 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto17.jpg';
+const imgDamha208_18 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto18.jpg';
+const imgDamha208_19 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto19.jpg';
+const imgDamha208_20 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto20.jpg';
+const imgDamha208_21 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto21.jpg';
+const imgDamha208_22 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto22.jpg';
+const imgDamha208_23 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto23.jpg';
+const imgDamha208_24 = '/imoveis_organizados/campo_grande/imovel_cod_208/ref99125_Alto_Padrão_e_Conforto_Casa_Térrea_de_Esquina_foto24.jpg';
+const imgDamha214 = '/imoveis_organizados/campo_grande/imovel_cod_214/damha_iii_fachada_01_cod_214.webp';
+const imgDamha214_01 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto01.jpg';
+const imgDamha214_02 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto02.jpg';
+const imgDamha214_03 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto03.jpg';
+const imgDamha214_04 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto04.jpg';
+const imgDamha214_05 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto05.jpg';
+const imgDamha214_06 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto06.jpg';
+const imgDamha214_07 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto07.jpg';
+const imgDamha214_08 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto08.jpg';
+const imgDamha214_09 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto09.jpg';
+const imgDamha214_10 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto10.jpg';
+const imgDamha214_11 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto11.jpg';
+const imgDamha214_12 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto12.jpg';
+const imgDamha214_13 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto13.jpg';
+const imgDamha214_14 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto14.jpg';
+const imgDamha214_15 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto15.jpg';
+const imgDamha214_16 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto16.jpg';
+const imgDamha214_17 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto17.jpg';
+const imgDamha214_18 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto18.jpg';
+const imgDamha214_19 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto19.jpg';
+const imgDamha214_20 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto20.jpg';
+const imgDamha214_21 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto21.jpg';
+const imgDamha214_22 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto22.jpg';
+const imgDamha214_23 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto23.jpg';
+const imgDamha214_24 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto24.jpg';
+const imgDamha214_25 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto25.jpg';
+const imgDamha214_26 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto26.jpg';
+const imgDamha214_27 = '/imoveis_organizados/campo_grande/imovel_cod_214/ref99125_Alto_Padrão_no_Damha_III_4_Suítes_foto27.jpg';
+const imgDamha209 = '/imoveis_organizados/campo_grande/imovel_cod_209/damha_i_mansao_01_cod_209.webp';
+const imgDamha209_01 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto01.jpg';
+const imgDamha209_02 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto02.jpg';
+const imgDamha209_03 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto03.jpg';
+const imgDamha209_04 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto04.jpg';
+const imgDamha209_05 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto05.jpg';
+const imgDamha209_06 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto06.jpg';
+const imgDamha209_07 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto07.jpg';
+const imgDamha209_08 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto08.jpg';
+const imgDamha209_20 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto20.jpg';
+const imgDamha209_22 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto22.jpg';
+const imgDamha209_23 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto23.jpg';
+const imgDamha209_25 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto25.jpg';
+const imgDamha209_26 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto26.jpg';
+const imgDamha209_27 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto27.jpg';
+const imgDamha209_28 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto28.jpg';
+const imgDamha209_29 = '/imoveis_organizados/campo_grande/imovel_cod_209/ref99125_Alto_Padrão_no_Damha_I_com_2900_m_de_Terreno_foto29.jpg';
+const imgDamha213 = '/imoveis_organizados/campo_grande/imovel_cod_213/damha_ii_fachada_01_cod_213.webp';
+const imgDamha213_01 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto01.png';
+const imgDamha213_02 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto02.jpg';
+const imgDamha213_03 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto03.jpg';
+const imgDamha213_04 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto04.jpg';
+const imgDamha213_05 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto05.jpg';
+const imgDamha213_06 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto06.jpg';
+const imgDamha213_07 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto07.jpg';
+const imgDamha213_08 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto08.jpg';
+const imgDamha213_09 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto09.jpg';
+const imgDamha213_10 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto10.jpg';
+const imgDamha213_11 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto11.jpg';
+const imgDamha213_12 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto12.jpg';
+const imgDamha213_13 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto13.jpg';
+const imgDamha213_14 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto14.jpg';
+const imgDamha213_15 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto15.jpg';
+const imgDamha213_16 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto16.jpg';
+const imgDamha213_17 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto17.jpg';
+const imgDamha213_18 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto18.jpg';
+const imgDamha213_19 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto19.jpg';
+const imgDamha213_20 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto20.jpg';
+const imgDamha213_21 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto21.jpg';
+const imgDamha213_22 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto22.jpg';
+const imgDamha213_23 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto23.jpg';
+const imgDamha213_24 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto24.jpg';
+const imgDamha213_25 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto25.jpg';
+const imgDamha213_26 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto26.jpg';
+const imgDamha213_27 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto27.jpg';
+const imgDamha213_28 = '/imoveis_organizados/campo_grande/imovel_cod_213/ref99125_Sobrado_de_Esquina_no_Damha_II_4_Suítes_e_Piscina_foto28.jpg';
+const imgDamha217 = '/imoveis_organizados/campo_grande/imovel_cod_217/damha_ii_fachada_01_cod_217.webp';
+const imgDamha217_01 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto01.jpg';
+const imgDamha217_02 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto02.jpg';
+const imgDamha217_03 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto03.jpg';
+const imgDamha217_04 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto04.jpg';
+const imgDamha217_05 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto05.jpg';
+const imgDamha217_06 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto06.jpg';
+const imgDamha217_07 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto07.jpg';
+const imgDamha217_08 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto08.jpg';
+const imgDamha217_09 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto09.jpg';
+const imgDamha217_10 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto10.jpg';
+const imgDamha217_11 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto11.jpg';
+const imgDamha217_12 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto12.jpg';
+const imgDamha217_13 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto13.jpg';
+const imgDamha217_14 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto14.jpg';
+const imgDamha217_15 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto15.jpg';
+const imgDamha217_16 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto16.jpg';
+const imgDamha217_17 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto17.jpg';
+const imgDamha217_18 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto18.jpg';
+const imgDamha217_19 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto19.jpg';
+const imgDamha217_20 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto20.jpg';
+const imgDamha217_21 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto21.jpg';
+const imgDamha217_22 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto22.jpg';
+const imgDamha217_23 = '/imoveis_organizados/campo_grande/imovel_cod_217/ref99125_Alto_Padrão_Casa_com_4_Suítes_e_Lazer_Completo_no__foto23.jpg';
+
+// --- NOVOS IMOVEIS ---
+const imgNovos_667161_0 = '/imoveis_organizados/campo_grande/imovel_ref_667161/1.jpg';
+const imgNovos_667161_1 = '/imoveis_organizados/campo_grande/imovel_ref_667161/2.jpg';
+const imgNovos_667161_2 = '/imoveis_organizados/campo_grande/imovel_ref_667161/3.jpg';
+const imgNovos_667161_3 = '/imoveis_organizados/campo_grande/imovel_ref_667161/4.jpg';
+const imgNovos_667161_4 = '/imoveis_organizados/campo_grande/imovel_ref_667161/5.jpg';
+const imgNovos_667161_5 = '/imoveis_organizados/campo_grande/imovel_ref_667161/6.jpg';
+const imgNovos_667161_6 = '/imoveis_organizados/campo_grande/imovel_ref_667161/7.jpg';
+const imgNovos_667161_7 = '/imoveis_organizados/campo_grande/imovel_ref_667161/8.jpg';
+const imgNovos_667161_8 = '/imoveis_organizados/campo_grande/imovel_ref_667161/9.jpg';
+const imgNovos_667161_9 = '/imoveis_organizados/campo_grande/imovel_ref_667161/10.jpg';
+const imgNovos_667161_10 = '/imoveis_organizados/campo_grande/imovel_ref_667161/11.jpg';
+const imgNovos_667161_11 = '/imoveis_organizados/campo_grande/imovel_ref_667161/12.jpg';
+const imgNovos_667161_12 = '/imoveis_organizados/campo_grande/imovel_ref_667161/13.jpg';
+const imgNovos_667161_13 = '/imoveis_organizados/campo_grande/imovel_ref_667161/14.jpg';
+const imgNovos_667161_14 = '/imoveis_organizados/campo_grande/imovel_ref_667161/15.jpg';
+const imgNovos_667161_15 = '/imoveis_organizados/campo_grande/imovel_ref_667161/16.jpg';
+const imgNovos_667161_16 = '/imoveis_organizados/campo_grande/imovel_ref_667161/17.jpg';
+const imgNovos_667161_17 = '/imoveis_organizados/campo_grande/imovel_ref_667161/18.jpg';
+const imgNovos_667161_18 = '/imoveis_organizados/campo_grande/imovel_ref_667161/19.jpg';
+const imgNovos_667161_19 = '/imoveis_organizados/campo_grande/imovel_ref_667161/20.jpg';
+const imgNovos_667161_20 = '/imoveis_organizados/campo_grande/imovel_ref_667161/21.jpg';
+const imgNovos_667161_21 = '/imoveis_organizados/campo_grande/imovel_ref_667161/22.jpg';
+const imgNovos_667161_22 = '/imoveis_organizados/campo_grande/imovel_ref_667161/23.jpg';
+const imgNovos_667161_23 = '/imoveis_organizados/campo_grande/imovel_ref_667161/24.jpg';
+const imgNovos_667161_24 = '/imoveis_organizados/campo_grande/imovel_ref_667161/25.jpg';
+const imgNovos_667161_25 = '/imoveis_organizados/campo_grande/imovel_ref_667161/26.jpg';
+const imgNovos_667161_26 = '/imoveis_organizados/campo_grande/imovel_ref_667161/27.jpg';
+const imgNovos_676079_0 = '/imoveis_organizados/campo_grande/imovel_ref_676079/1.jpg';
+const imgNovos_676079_1 = '/imoveis_organizados/campo_grande/imovel_ref_676079/2.jpg';
+const imgNovos_676079_2 = '/imoveis_organizados/campo_grande/imovel_ref_676079/3.jpg';
+const imgNovos_676079_3 = '/imoveis_organizados/campo_grande/imovel_ref_676079/4.jpg';
+const imgNovos_676079_4 = '/imoveis_organizados/campo_grande/imovel_ref_676079/5.jpg';
+const imgNovos_676079_5 = '/imoveis_organizados/campo_grande/imovel_ref_676079/6.jpg';
+const imgNovos_676079_6 = '/imoveis_organizados/campo_grande/imovel_ref_676079/7.jpg';
+const imgNovos_676079_7 = '/imoveis_organizados/campo_grande/imovel_ref_676079/8.jpg';
+const imgNovos_676079_8 = '/imoveis_organizados/campo_grande/imovel_ref_676079/9.jpg';
+const imgNovos_676079_9 = '/imoveis_organizados/campo_grande/imovel_ref_676079/10.jpg';
+const imgNovos_676079_10 = '/imoveis_organizados/campo_grande/imovel_ref_676079/11.jpg';
+const imgNovos_676079_11 = '/imoveis_organizados/campo_grande/imovel_ref_676079/12.jpg';
+const imgNovos_676079_12 = '/imoveis_organizados/campo_grande/imovel_ref_676079/13.jpg';
+const imgNovos_676079_13 = '/imoveis_organizados/campo_grande/imovel_ref_676079/14.jpg';
+const imgNovos_676079_14 = '/imoveis_organizados/campo_grande/imovel_ref_676079/15.jpg';
+const imgNovos_676079_15 = '/imoveis_organizados/campo_grande/imovel_ref_676079/16.jpg';
+const imgNovos_676079_16 = '/imoveis_organizados/campo_grande/imovel_ref_676079/17.jpg';
+const imgNovos_676079_17 = '/imoveis_organizados/campo_grande/imovel_ref_676079/18.jpg';
+const imgNovos_676079_18 = '/imoveis_organizados/campo_grande/imovel_ref_676079/19.jpg';
+const imgNovos_676079_19 = '/imoveis_organizados/campo_grande/imovel_ref_676079/20.jpg';
+const imgNovos_676079_20 = '/imoveis_organizados/campo_grande/imovel_ref_676079/21.jpg';
+const imgNovos_676079_21 = '/imoveis_organizados/campo_grande/imovel_ref_676079/22.jpg';
+const imgNovos_676079_22 = '/imoveis_organizados/campo_grande/imovel_ref_676079/23.jpg';
+const imgNovos_676079_23 = '/imoveis_organizados/campo_grande/imovel_ref_676079/24.jpg';
+const imgNovos_676079_24 = '/imoveis_organizados/campo_grande/imovel_ref_676079/25.jpg';
+const imgNovos_676079_25 = '/imoveis_organizados/campo_grande/imovel_ref_676079/26.jpg';
+const imgNovos_682176_0 = '/imoveis_organizados/campo_grande/imovel_ref_682176/1.jpg';
+const imgNovos_682176_1 = '/imoveis_organizados/campo_grande/imovel_ref_682176/2.jpg';
+const imgNovos_682176_2 = '/imoveis_organizados/campo_grande/imovel_ref_682176/3.jpg';
+const imgNovos_682176_3 = '/imoveis_organizados/campo_grande/imovel_ref_682176/4.jpg';
+const imgNovos_682176_4 = '/imoveis_organizados/campo_grande/imovel_ref_682176/5.jpg';
+const imgNovos_682176_5 = '/imoveis_organizados/campo_grande/imovel_ref_682176/6.jpg';
+const imgNovos_682176_6 = '/imoveis_organizados/campo_grande/imovel_ref_682176/7.jpg';
+const imgNovos_682176_7 = '/imoveis_organizados/campo_grande/imovel_ref_682176/8.jpg';
+const imgNovos_682176_8 = '/imoveis_organizados/campo_grande/imovel_ref_682176/9.jpg';
+const imgNovos_682176_9 = '/imoveis_organizados/campo_grande/imovel_ref_682176/10.jpg';
+const imgNovos_682176_10 = '/imoveis_organizados/campo_grande/imovel_ref_682176/11.jpg';
+const imgNovos_682176_11 = '/imoveis_organizados/campo_grande/imovel_ref_682176/12.jpg';
+const imgNovos_682176_12 = '/imoveis_organizados/campo_grande/imovel_ref_682176/13.jpg';
+const imgNovos_682176_13 = '/imoveis_organizados/campo_grande/imovel_ref_682176/14.jpg';
+const imgNovos_682176_14 = '/imoveis_organizados/campo_grande/imovel_ref_682176/15.jpg';
+const imgNovos_682176_15 = '/imoveis_organizados/campo_grande/imovel_ref_682176/16.jpg';
 
 export type Property = {
   id: string;
@@ -777,6 +848,111 @@ export const propertiesData: PropertiesData = {
     }
   ],
   ms_properties: [
+    {
+      id: "novos-667161",
+      title: "Sobrado-Condomínio à Venda em Residencial Alphaville III, Campo Grande MS",
+      location: "Residencial Alphaville III, Campo Grande MS | Campo Grande - MS",
+      image: imgNovos_667161_0,
+      images: [
+        imgNovos_667161_0,
+        imgNovos_667161_1,
+        imgNovos_667161_2,
+        imgNovos_667161_3,
+        imgNovos_667161_4,
+        imgNovos_667161_5,
+        imgNovos_667161_6,
+        imgNovos_667161_7,
+        imgNovos_667161_8,
+        imgNovos_667161_9,
+        imgNovos_667161_10,
+        imgNovos_667161_11,
+        imgNovos_667161_12,
+        imgNovos_667161_13,
+        imgNovos_667161_14,
+        imgNovos_667161_15,
+        imgNovos_667161_16,
+        imgNovos_667161_17,
+        imgNovos_667161_18,
+        imgNovos_667161_19,
+        imgNovos_667161_20,
+        imgNovos_667161_21,
+        imgNovos_667161_22,
+        imgNovos_667161_23,
+        imgNovos_667161_24,
+        imgNovos_667161_25,
+        imgNovos_667161_26
+      ],
+      summary: "Excelente oportunidade no Residencial Alphaville III, Campo Grande MS | Campo Grande - MS. Entre em contato para mais detalhes.",
+      specs: ["Cód. 667161"],
+      price: "Consulte",
+      cta: "Fale com a gente"
+    },
+    {
+      id: "novos-676079",
+      title: "Sobrado-Condomínio à Venda em Residencial Alphaville IV, Campo Grande MS",
+      location: "Residencial Alphaville IV, Campo Grande MS | Campo Grande - MS",
+      image: imgNovos_676079_0,
+      images: [
+        imgNovos_676079_0,
+        imgNovos_676079_1,
+        imgNovos_676079_2,
+        imgNovos_676079_3,
+        imgNovos_676079_4,
+        imgNovos_676079_5,
+        imgNovos_676079_6,
+        imgNovos_676079_7,
+        imgNovos_676079_8,
+        imgNovos_676079_9,
+        imgNovos_676079_10,
+        imgNovos_676079_11,
+        imgNovos_676079_12,
+        imgNovos_676079_13,
+        imgNovos_676079_14,
+        imgNovos_676079_15,
+        imgNovos_676079_16,
+        imgNovos_676079_17,
+        imgNovos_676079_18,
+        imgNovos_676079_19,
+        imgNovos_676079_20,
+        imgNovos_676079_21,
+        imgNovos_676079_22,
+        imgNovos_676079_23,
+        imgNovos_676079_24,
+        imgNovos_676079_25
+      ],
+      summary: "Excelente oportunidade no Residencial Alphaville IV, Campo Grande MS | Campo Grande - MS. Entre em contato para mais detalhes.",
+      specs: ["Cód. 676079"],
+      price: "Consulte",
+      cta: "Fale com a gente"
+    },
+    {
+      id: "novos-682176",
+      title: "Sobrado-Condomínio à Venda em Residencial Alphaville II, Campo Grande MS",
+      location: "Residencial Alphaville II, Campo Grande MS | Campo Grande - MS",
+      image: imgNovos_682176_0,
+      images: [
+        imgNovos_682176_0,
+        imgNovos_682176_1,
+        imgNovos_682176_2,
+        imgNovos_682176_3,
+        imgNovos_682176_4,
+        imgNovos_682176_5,
+        imgNovos_682176_6,
+        imgNovos_682176_7,
+        imgNovos_682176_8,
+        imgNovos_682176_9,
+        imgNovos_682176_10,
+        imgNovos_682176_11,
+        imgNovos_682176_12,
+        imgNovos_682176_13,
+        imgNovos_682176_14,
+        imgNovos_682176_15
+      ],
+      summary: "Excelente oportunidade no Residencial Alphaville II, Campo Grande MS | Campo Grande - MS. Entre em contato para mais detalhes.",
+      specs: ["Cód. 682176"],
+      price: "Consulte",
+      cta: "Fale com a gente"
+    },
     {
       id: "alpha-555",
       title: "Residencial Alphaville 2 - Puro Luxo",

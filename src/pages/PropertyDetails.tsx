@@ -1,16 +1,39 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { BackgroundGrid } from '../components/SVGElements';
 import { ChevronLeft, ArrowRight, CheckCircle2, PlayCircle, MapPin, Expand } from 'lucide-react';
-import { getPropertyById, Property } from '../data/properties';
 
 export const PropertyDetails = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const property = id ? getPropertyById(id) : null;
+  const [property, setProperty] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    if (!id) return;
+    fetch('/api/properties')
+      .then(res => res.json())
+      .then(data => {
+        const found = data.find((p: any) => p.code === id || p.id == id);
+        setProperty(found);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error(err);
+        setLoading(false);
+      });
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="w-full min-h-screen bg-aurea-dark text-aurea-light flex items-center justify-center font-serif text-2xl uppercase tracking-widest">
+        Carregando Detalhes...
+      </div>
+    );
+  }
 
   if (!property) {
     return (
@@ -23,6 +46,8 @@ export const PropertyDetails = () => {
     );
   }
 
+  // Parse specs if it's a string from SQLite
+  const specs = typeof property.specs === 'string' ? JSON.parse(property.specs || '[]') : (property.specs || []);
   const images = property.images && property.images.length > 0 ? property.images : [property.image];
 
   return (
@@ -176,13 +201,13 @@ export const PropertyDetails = () => {
 
         {/* Sidebar Specs */}
         <div className="lg:col-span-3 flex flex-col gap-12">
-          {property.specs && property.specs.length > 0 && (
+          {specs && specs.length > 0 && (
             <div>
               <h3 className="font-sans text-[10px] uppercase tracking-[0.2em] text-aurea-gold mb-8 flex items-center gap-4 border-b border-white/10 pb-4">
                 Especificações
               </h3>
               <ul className="flex flex-col gap-4">
-                {property.specs.map((spec, idx) => (
+                {specs.map((spec: string, idx: number) => (
                   <li key={idx} className="flex items-center gap-3">
                     <CheckCircle2 size={14} className="text-aurea-gold/70 shrink-0" />
                     <span className="font-sans text-[11px] uppercase tracking-widest text-aurea-light/80">{spec}</span>
