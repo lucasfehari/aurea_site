@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { SVGElements } from './SVGElements';
 import { Menu, X, Instagram, Youtube } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -7,12 +7,32 @@ import logoAurea from '../assets/SVG/SVG/logo_aurea.svg';
 
 export const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [showMagazinePopup, setShowMagazinePopup] = React.useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     setIsMenuOpen(false);
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  React.useEffect(() => {
+    const hasSeenPopup = sessionStorage.getItem('hasSeenMagazinePopup');
+    if (!hasSeenPopup && location.pathname !== '/revista') {
+      const timer = setTimeout(() => setShowMagazinePopup(true), 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname]);
+
+  const closePopup = () => {
+    setShowMagazinePopup(false);
+    sessionStorage.setItem('hasSeenMagazinePopup', 'true');
+  };
+
+  const goToMagazine = () => {
+    closePopup();
+    navigate('/revista');
+  };
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -68,6 +88,40 @@ export const Layout = () => {
                 {link.name}
               </Link>
             ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Magazine Popup */}
+      <AnimatePresence>
+        {showMagazinePopup && (
+          <motion.div
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            className="fixed bottom-6 right-6 md:bottom-12 md:right-12 z-[60] bg-aurea-dark border border-aurea-gold/30 p-8 shadow-2xl max-w-sm text-center backdrop-blur-sm bg-opacity-95"
+          >
+            <button onClick={closePopup} className="absolute top-4 right-4 text-aurea-light/50 hover:text-aurea-gold transition-colors">
+              <X size={20} />
+            </button>
+            <h3 className="font-serif text-2xl text-aurea-gold mb-3 tracking-wide">Áurea Revista</h3>
+            <p className="font-sans text-sm text-aurea-light/80 mb-8 leading-relaxed">
+              Quer acessar a revista nova que temos na seção?
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                onClick={closePopup}
+                className="px-6 py-3 font-sans text-xs tracking-widest uppercase border border-white/20 hover:border-white/50 text-aurea-light transition-all"
+              >
+                Agora não
+              </button>
+              <button
+                onClick={goToMagazine}
+                className="px-6 py-3 font-sans text-xs tracking-widest uppercase bg-aurea-gold text-aurea-dark hover:bg-aurea-light transition-all"
+              >
+                Acessar
+              </button>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
